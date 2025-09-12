@@ -1,0 +1,3856 @@
+{
+  "a_couple_of_cuckoos": {
+    "erika": {
+      "full_name": "Erika AMANO",
+      "first_name": "Erika",
+      "description": "The woman with long orange hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/erika-amano-1-285x400.webp?t=1650850654"
+    },
+    "nagi": {
+      "full_name": "Nagi UMINO",
+      "first_name": "Nagi",
+      "description": "The man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/nagi-umino-1-285x399.webp?t=1653330045"
+    },
+    "hiro": {
+      "full_name": "Hiro SEGAWA",
+      "first_name": "Hiro",
+      "description": "the woman with purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hiro-segawa-1-285x400.webp?t=1653330113"
+    },
+    "sachi": {
+      "full_name": "Sachi UMINO",
+      "first_name": "Sachi",
+      "description": "the woman with blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sachi-umino-1-285x399.webp?t=1752800584"
+    },
+    "asami": {
+      "full_name": "Asami SEGAWA",
+      "first_name": "Asami",
+      "description": "The woman with long purple hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/asami-segawa-1-285x399.webp?t=1654270687"
+    },
+    "homeroom": {
+      "full_name": "Homeroom Teacher",
+      "first_name": "Homeroom",
+      "description": "The man with short black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/homeroom-teacher-a-couple-of-cuckoos-1-285x399.webp?t=1653330216"
+    },
+    "namie": {
+      "full_name": "Namie UMINO",
+      "first_name": "Namie",
+      "description": "The woman with long pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/namie-umino-1-285x398.webp?t=1651698550"
+    },
+    "ritsuko": {
+      "full_name": "Ritsuko AMANO",
+      "first_name": "Ritsuko",
+      "description": "The woman with short black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ritsuko-amano-1-285x400.webp?t=1653331062"
+    },
+    "shibata": {
+      "full_name": "Shibata",
+      "first_name": "Shibata",
+      "description": "The man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shibata-a-couple-of-cuckoos-1-285x399.webp?t=1653331856"
+    },
+    "shion": {
+      "full_name": "Shion ASOMA",
+      "first_name": "Shion",
+      "description": "The man with light brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shion-asoma-1-285x399.webp?t=1654528719"
+    },
+    "souichirou": {
+      "full_name": "Souichirou AMANO",
+      "first_name": "Souichirou",
+      "description": "The man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/souichirou-amano-a-couple-of-cuckoos-1-285x399.webp?t=1653331088"
+    },
+    "takahashi": {
+      "full_name": "Takahashi",
+      "first_name": "Takahashi",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/takahashi-a-couple-of-cuckoos-1-285x400.webp?t=1661833229"
+    },
+    "yonezawa": {
+      "full_name": "Yonezawa",
+      "first_name": "Yonezawa",
+      "description": "the man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yonezawa-a-couple-of-cuckoos-1-285x399.webp?t=1660061929"
+    },
+    "youhei": {
+      "full_name": "Youhei UMINO",
+      "first_name": "Youhei",
+      "description": "The man with short blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/youhei-umino-1-285x399.webp?t=1657547976"
+    }
+  },
+  "can_a_boy_girl_friendship_survive": {
+    "himari": {
+      "full_name": "Himari INUZUKA",
+      "first_name": "Himari",
+      "description": "The woman with short blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/himari-inuzuka-1-285x399.webp?t=1743899133"
+    },
+    "yuu": {
+      "full_name": "Yuu NATSUME",
+      "first_name": "Yuu",
+      "description": "the man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yuu-natsume-1-285x399.webp?t=1748403584"
+    },
+    "rion": {
+      "full_name": "Rion ENOMOTO",
+      "first_name": "Rion",
+      "description": "The woman with long brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/rion-enomoto-1-285x399.webp?t=1750647764"
+    },
+    "shinji": {
+      "full_name": "Shinji MAKISHIMA",
+      "first_name": "Shinji",
+      "description": "the man with short blond hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shinji-makishima-1-285x399.webp?t=1748403646"
+    },
+    "asumi": {
+      "full_name": "Asumi YOKOYAMA",
+      "first_name": "Asumi",
+      "description": "the woman with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/asumi-yokoyama-1-285x399.webp?t=1748405914"
+    },
+    "enomoto's": {
+      "full_name": "Enomoto's Mother",
+      "first_name": "Enomoto's",
+      "description": "The woman with long dark hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/enomotos-mother-1-285x399.webp?t=1750647606"
+    },
+    "hibari": {
+      "full_name": "Hibari INUZUKA",
+      "first_name": "Hibari",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hibari-inuzuka-1-285x399.webp?t=1748403623"
+    },
+    "kureha": {
+      "full_name": "Kureha ENOMOTO",
+      "first_name": "Kureha",
+      "description": "the woman with long red hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kureha-enomoto-1-285x399.webp?t=1750647456"
+    },
+    "mao": {
+      "full_name": "Mao INOUE",
+      "first_name": "Mao",
+      "description": "The woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mao-inoue-can-a-boy-girl-friendship-survive-1-285x399.webp?t=1748405875"
+    },
+    "sakura": {
+      "full_name": "Sakura NATSUME",
+      "first_name": "Sakura",
+      "description": "The woman with short brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sakura-natsume-1-285x399.webp?t=1744730119"
+    },
+    "yumi": {
+      "full_name": "Yumi ARAKI",
+      "first_name": "Yumi",
+      "description": "the woman with long purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yumi-araki-1-285x399.webp?t=1750647570"
+    }
+  },
+  "classroom_of_the_elite": {
+    "kikyou": {
+      "full_name": "Kikyou KUSHIDA",
+      "first_name": "Kikyou",
+      "description": "the woman with short blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kikyou-kushida-1-285x399.webp?t=1661322681"
+    },
+    "kiyotaka": {
+      "full_name": "Kiyotaka AYANOKOUJI",
+      "first_name": "Kiyotaka",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kiyotaka-ayanokouji-1-285x399.webp?t=1659061676"
+    },
+    "suzune": {
+      "full_name": "Suzune HORIKITA",
+      "first_name": "Suzune",
+      "description": "The woman with long black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/suzune-horikita-1-285x399.webp?t=1661318090"
+    },
+    "airi": {
+      "full_name": "Airi SAKURA",
+      "first_name": "Airi",
+      "description": "The woman with long pink hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/airi-sakura-1-285x399.webp?t=1664412505"
+    },
+    "haruki": {
+      "full_name": "Haruki YAMAUCHI",
+      "first_name": "Haruki",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/haruki-yamauchi-1-190x266.jpg?t=1626006699"
+    },
+    "honami": {
+      "full_name": "Honami ICHINOSE",
+      "first_name": "Honami",
+      "description": "the woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/honami-ichinose-1-285x400.webp?t=1658196258"
+    },
+    "kanji": {
+      "full_name": "Kanji IKE",
+      "first_name": "Kanji",
+      "description": "the man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kanji-ike-1-285x400.webp?t=1661317581"
+    },
+    "ken": {
+      "full_name": "Ken SUDOU",
+      "first_name": "Ken",
+      "description": "The man with red hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ken-sudou-1-285x399.webp?t=1659061197"
+    },
+    "manabu": {
+      "full_name": "Manabu HORIKITA",
+      "first_name": "Manabu",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/manabu-horikita-1-285x399.webp?t=1661326170"
+    },
+    "yousuke": {
+      "full_name": "Yousuke HIRATA",
+      "first_name": "Yousuke",
+      "description": "the man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yousuke-hirata-1-285x399.webp?t=1659060583"
+    },
+    "akane": {
+      "full_name": "Akane TACHIBANA",
+      "first_name": "Akane",
+      "description": "The woman with purple hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/akane-tachibana-youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-1-285x399.webp?t=1661326290"
+    },
+    "akito": {
+      "full_name": "Akito MIYAKE",
+      "first_name": "Akito",
+      "description": "The man with short purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/akito-miyake-1-285x399.webp?t=1661477543"
+    },
+    "albert": {
+      "full_name": "Albert YAMADA",
+      "first_name": "Albert",
+      "description": "The bald man",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/albert-yamada-1-285x399.webp?t=1658198116"
+    },
+    "arisu": {
+      "full_name": "Arisu SAKAYANAGI",
+      "first_name": "Arisu",
+      "description": "the woman with long white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/arisu-sakayanagi-1-285x400.webp?t=1664340270"
+    },
+    "atsuomi": {
+      "full_name": "Atsuomi AYANOKOUJI",
+      "first_name": "Atsuomi",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/atsuomi-ayanokouji-1-285x399.webp?t=1664339792"
+    },
+    "chiaki": {
+      "full_name": "Chiaki MATSUSHITA",
+      "first_name": "Chiaki",
+      "description": "The woman with long brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/chiaki-matsushita-1-190x267.jpg?t=1626007710"
+    },
+    "chie": {
+      "full_name": "Chie HOSHINOMIYA",
+      "first_name": "Chie",
+      "description": "the woman with long light brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/chie-hoshinomiya-1-285x398.webp?t=1660604563"
+    },
+    "chihiro": {
+      "full_name": "Chihiro SHIRANAMI",
+      "first_name": "Chihiro",
+      "description": "the woman with short blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/chihiro-shiranami-1-190x266.jpg?t=1626007711"
+    },
+    "daichi": {
+      "full_name": "Daichi ISHIZAKI",
+      "first_name": "Daichi",
+      "description": "The man with short green hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/daichi-ishizaki-1-285x399.webp?t=1664410697"
+    },
+    "haruka": {
+      "full_name": "Haruka HASEBE",
+      "first_name": "Haruka",
+      "description": "The woman with long blue hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/haruka-hasebe-1-285x398.webp?t=1661477154"
+    },
+    "hayato": {
+      "full_name": "Hayato KITO",
+      "first_name": "Hayato",
+      "description": "The man with long gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hayato-kito-1-285x399.webp?t=1661326738"
+    },
+    "hideo": {
+      "full_name": "Hideo SOTOMURA",
+      "first_name": "Hideo",
+      "description": "the person with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hideo-sotomura-1-285x399.webp?t=1658197803"
+    },
+    "kakeru": {
+      "full_name": "Kakeru RYUUEN",
+      "first_name": "Kakeru",
+      "description": "the man with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kakeru-ryuuen-1-285x399.webp?t=1658198587"
+    },
+    "kayano": {
+      "full_name": "Kayano ONODERA",
+      "first_name": "Kayano",
+      "description": "The woman with short purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kayano-onodera-1-285x399.webp?t=1659060963"
+    },
+    "kazuma": {
+      "full_name": "Kazuma SAKAGAMI",
+      "first_name": "Kazuma",
+      "description": "The man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kazuma-sakagami-1-285x399.webp?t=1660604129"
+    },
+    "kei": {
+      "full_name": "Kei KARUIZAWA",
+      "first_name": "Kei",
+      "description": "the woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kei-karuizawa-1-285x399.webp?t=1664413096"
+    },
+    "kohei": {
+      "full_name": "Kohei KATSURAGI",
+      "first_name": "Kohei",
+      "description": "The bald man",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kohei-katsuragi-1-285x399.webp?t=1660604878"
+    },
+    "kokoro": {
+      "full_name": "Kokoro INOGASHIRA",
+      "first_name": "Kokoro",
+      "description": "the woman with long purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kokoro-inogashira-1-190x266.jpg?t=1626007710"
+    },
+    "kyosuke": {
+      "full_name": "Kyosuke OKITANI",
+      "first_name": "Kyosuke",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kyosuke-okitani-1-285x400.webp?t=1659058136"
+    },
+    "kyougo": {
+      "full_name": "Kyougo KOMIYA",
+      "first_name": "Kyougo",
+      "description": "The man with short dark hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kyougo-komiya-1-285x400.webp?t=1663992131"
+    },
+    "mako": {
+      "full_name": "Mako AMIKURA",
+      "first_name": "Mako",
+      "description": "The woman with long purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mako-amikura-1-285x400.webp?t=1660449365"
+    },
+    "masayoshi": {
+      "full_name": "Masayoshi HASHIMOTO",
+      "first_name": "Masayoshi",
+      "description": "The man with short blond hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/masayoshi-hashimoto-1-285x400.webp?t=1664340528"
+    },
+    "masumi": {
+      "full_name": "Masumi KAMURO",
+      "first_name": "Masumi",
+      "description": "The woman with long dark hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/masumi-kamuro-1-285x401.webp?t=1661326482"
+    },
+    "maya": {
+      "full_name": "Maya SATO",
+      "first_name": "Maya",
+      "description": "The woman with long pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/maya-sato-1-285x399.webp?t=1664401154"
+    },
+    "mei-yu": {
+      "full_name": "Mei-Yu WANG",
+      "first_name": "Mei-Yu",
+      "description": "The woman with long purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mei-yu-wang-1-285x399.webp?t=1661060009"
+    },
+    "mio": {
+      "full_name": "Mio IBUKI",
+      "first_name": "Mio",
+      "description": "the person with short blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mio-ibuki-1-285x400.webp?t=1657942187"
+    },
+    "nene": {
+      "full_name": "Nene MORI",
+      "first_name": "Nene",
+      "description": "The woman with long brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/nene-mori-1-285x398.webp?t=1659058970"
+    },
+    "old": {
+      "full_name": "Old Woman",
+      "first_name": "Old",
+      "description": "The elderly woman with gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/old-woman-classroom-of-the-elite-1-190x266.jpg?t=1626015485"
+    },
+    "reo": {
+      "full_name": "Reo KONDOU",
+      "first_name": "Reo",
+      "description": "The person with red hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/reo-kondou-1-285x400.webp?t=1661325904"
+    },
+    "rokusuke": {
+      "full_name": "Rokusuke KOUENJI",
+      "first_name": "Rokusuke",
+      "description": "The man with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/rokusuke-kouenji-1-285x399.webp?t=1664341204"
+    },
+    "ryotaro": {
+      "full_name": "Ryotaro HONDO",
+      "first_name": "Ryotaro",
+      "description": "The person with short blue hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ryotaro-hondo-1-285x399.webp?t=1659057831"
+    },
+    "ryuuji": {
+      "full_name": "Ryuuji KANZAKI",
+      "first_name": "Ryuuji",
+      "description": "The man with purple hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ryuuji-kanzaki-1-285x399.webp?t=1661322439"
+    },
+    "sae": {
+      "full_name": "Sae CHABASHIRA",
+      "first_name": "Sae",
+      "description": "The woman with long brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sae-chabashira-1-285x399.webp?t=1659060131"
+    },
+    "satoru": {
+      "full_name": "Satoru KANEDA",
+      "first_name": "Satoru",
+      "description": "The man with short light brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/satoru-kaneda-1-285x400.webp?t=1660604237"
+    },
+    "satsuki": {
+      "full_name": "Satsuki SHINOHARA",
+      "first_name": "Satsuki",
+      "description": "the woman with short dark blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/satsuki-shinohara-1-190x266.jpg?t=1626007710"
+    },
+    "soshi": {
+      "full_name": "Soshi MIYAMOTO",
+      "first_name": "Soshi",
+      "description": "The man with short brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/soshi-miyamoto-1-285x400.webp?t=1659058457"
+    },
+    "sou": {
+      "full_name": "Sou SHIBATA",
+      "first_name": "Sou",
+      "description": "The man with blue hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sou-shibata-youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-1-285x400.webp?t=1661321062"
+    },
+    "teruhiko": {
+      "full_name": "Teruhiko YUKIMURA",
+      "first_name": "Teruhiko",
+      "description": "The person with short gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/teruhiko-yukimura-1-285x399.webp?t=1657934506"
+    },
+    "tomoya": {
+      "full_name": "Tomoya MASHIMA",
+      "first_name": "Tomoya",
+      "description": "The man with short brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/tomoya-mashima-1-285x400.webp?t=1657934204"
+    },
+    "wataru": {
+      "full_name": "Wataru IJUIN",
+      "first_name": "Wataru",
+      "description": "the man with blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/wataru-ijuin-1-285x399.webp?t=1659058736"
+    },
+    "yahiko": {
+      "full_name": "Yahiko TOTSUKA",
+      "first_name": "Yahiko",
+      "description": "The man with short green hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yahiko-totsuka-1-285x400.webp?t=1663992301"
+    },
+    "yukitsu": {
+      "full_name": "Yukitsu KUSUDA",
+      "first_name": "Yukitsu",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yukitsu-kusuda-1-285x399.webp?t=1661326052"
+    },
+    "yume": {
+      "full_name": "Yume KOBASHI",
+      "first_name": "Yume",
+      "description": "the woman with short blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yume-kobashi-1-285x399.webp?t=1661321738"
+    }
+  },
+  "clevatess": {
+    "alicia": {
+      "full_name": "Alicia GLENFALL",
+      "first_name": "Alicia",
+      "description": "The woman with blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/alicia-glenfall-1-285x399.webp?t=1755858661"
+    },
+    "clevatess": {
+      "full_name": "Clevatess",
+      "first_name": "Clevatess",
+      "description": "The dark horned creature with red eyes.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/clevatess-1-285x399.webp?t=1751623930"
+    },
+    "klen": {
+      "full_name": "Klen",
+      "first_name": "Klen",
+      "description": "The person with short purple hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/klen-1-285x399.webp?t=1755858854"
+    },
+    "luna": {
+      "full_name": "Luna",
+      "first_name": "Luna",
+      "description": "the young child with pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/luna-clevatess-the-king-of-devil-beasts-the-baby-and-the-brave-of-undead-1-285x399.webp?t=1755857915"
+    },
+    "nelluru": {
+      "full_name": "Nelluru",
+      "first_name": "Nelluru",
+      "description": "The woman with short purple and white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/nelluru-1-285x399.webp?t=1755889734"
+    },
+    "arvensis": {
+      "full_name": "Arvensis",
+      "first_name": "Arvensis",
+      "description": "The dark creature with multiple red eyes and small wings.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/arvensis-1-285x399.webp?t=1754048960"
+    },
+    "betty": {
+      "full_name": "Betty",
+      "first_name": "Betty",
+      "description": "the large creature with gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/betty-clevatess-1-285x399.webp?t=1752146265"
+    },
+    "carme": {
+      "full_name": "Carme",
+      "first_name": "Carme",
+      "description": "The woman with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/carme-1-285x399.webp?t=1753124916"
+    },
+    "dagarn": {
+      "full_name": "Dagarn",
+      "first_name": "Dagarn",
+      "description": "The bald man",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/dagarn-1-285x399.webp?t=1752147135"
+    },
+    "drel": {
+      "full_name": "Drel",
+      "first_name": "Drel",
+      "description": "The man with long black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/drel-1-285x399.webp?t=1755855909"
+    },
+    "eslinn": {
+      "full_name": "Eslinn Mage",
+      "first_name": "Eslinn",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/eslinn-mage-1-285x399.webp?t=1755163640"
+    },
+    "favio": {
+      "full_name": "Favio FLEEP",
+      "first_name": "Favio",
+      "description": "The person with pink hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/favio-fleep-1-285x399.webp?t=1757533854"
+    },
+    "feeto": {
+      "full_name": "Feeto",
+      "first_name": "Feeto",
+      "description": "The person with long light hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/feeto-1-285x399.webp?t=1752147385"
+    },
+    "gabby": {
+      "full_name": "Gabby",
+      "first_name": "Gabby",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/gabby-clevatess-1-285x399.webp?t=1755168264"
+    },
+    "gart": {
+      "full_name": "Gart",
+      "first_name": "Gart",
+      "description": "The man with short brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/gart-1-285x399.webp?t=1754067140"
+    },
+    "hiden's": {
+      "full_name": "Hiden's King",
+      "first_name": "Hiden's",
+      "description": "The elderly man with long gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hidens-king-1-285x399.webp?t=1751577804"
+    },
+    "horgus": {
+      "full_name": "Horgus",
+      "first_name": "Horgus",
+      "description": "The person in armor with a white plume.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/horgus-1-285x399.webp?t=1751578795"
+    },
+    "kari": {
+      "full_name": "Kari",
+      "first_name": "Kari",
+      "description": "The woman with short brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kari-clevatess-1-285x399.webp?t=1755167583"
+    },
+    "katz": {
+      "full_name": "Katz",
+      "first_name": "Katz",
+      "description": "the person with short yellow hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/katz-clevatess-the-king-of-devil-beasts-the-baby-and-the-brave-of-undead-1-285x399.webp?t=1751530068"
+    },
+    "luna's": {
+      "full_name": "Luna's Guardian",
+      "first_name": "Luna's",
+      "description": "The woman with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lunas-guardian-1-285x399.webp?t=1745090084"
+    },
+    "margo": {
+      "full_name": "Margo GLENFALL",
+      "first_name": "Margo",
+      "description": "the man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/margo-glenfall-1-285x399.webp?t=1757533806"
+    },
+    "mark": {
+      "full_name": "Mark",
+      "first_name": "Mark",
+      "description": "The man with short brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mark-clevatess-1-285x399.webp?t=1755854876"
+    },
+    "meynard": {
+      "full_name": "Meynard SWANN",
+      "first_name": "Meynard",
+      "description": "the person with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/meynard-swann-1-285x399.webp?t=1755200354"
+    },
+    "minarch": {
+      "full_name": "Minarch",
+      "first_name": "Minarch",
+      "description": "The person with short black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/minarch-1-285x399.webp?t=1751529993"
+    },
+    "miquel": {
+      "full_name": "Miquel",
+      "first_name": "Miquel",
+      "description": "The person with long orange hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/miquel-1-285x399.webp?t=1754070395"
+    },
+    "mirlo": {
+      "full_name": "Mirlo",
+      "first_name": "Mirlo",
+      "description": "The man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mirlo-1-285x399.webp?t=1751530023"
+    },
+    "mudo": {
+      "full_name": "Mudo",
+      "first_name": "Mudo",
+      "description": "The person in armor.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mudo-clevatess-the-king-of-devil-beasts-the-baby-and-the-brave-of-undead-1-285x399.webp?t=1751578913"
+    },
+    "naie": {
+      "full_name": "Naie CHIFFONLITS",
+      "first_name": "Naie",
+      "description": "The woman with pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/naie-chiffonlits-1-285x399.webp?t=1756421023"
+    },
+    "narration": {
+      "full_name": "Narration",
+      "first_name": "Narration",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "pete": {
+      "full_name": "Pete",
+      "first_name": "Pete",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/pete-clevatess-1-285x399.webp?t=1755167872"
+    },
+    "phil": {
+      "full_name": "Phil",
+      "first_name": "Phil",
+      "description": "The man with short blond hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/phil-clevatess-1-285x399.webp?t=1755167933"
+    },
+    "ravens": {
+      "full_name": "Ravens Bandit",
+      "first_name": "Ravens",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ravens-bandit-1-285x398.webp?t=1755854809"
+    },
+    "rod": {
+      "full_name": "Rod ROYES",
+      "first_name": "Rod",
+      "description": "The man with blond hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/rod-royes-1-285x399.webp?t=1754070301"
+    },
+    "satch": {
+      "full_name": "Satch",
+      "first_name": "Satch",
+      "description": "The man with blue hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/satch-clevatess-1-285x399.webp?t=1752146923"
+    },
+    "slave": {
+      "full_name": "Slave Husband",
+      "first_name": "Slave",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/slave-husband-1-285x399.webp?t=1753124661"
+    },
+    "steffan": {
+      "full_name": "Steffan",
+      "first_name": "Steffan",
+      "description": "The person with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/steffan-1-285x399.webp?t=1751578754"
+    },
+    "tala": {
+      "full_name": "Tala Mort ANZETTA",
+      "first_name": "Tala",
+      "description": "The person with long purple hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/tala-mort-anzetta-1-285x399.webp?t=1756310117"
+    },
+    "underwater": {
+      "full_name": "Underwater Dark Beast",
+      "first_name": "Underwater",
+      "description": "The purple tentacled creature",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/underwater-dark-beast-1-285x399.webp?t=1754049415"
+    },
+    "vroko": {
+      "full_name": "Vroko",
+      "first_name": "Vroko",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/vroko-1-285x399.webp?t=1753124810"
+    },
+    "zavthier": {
+      "full_name": "Zavthier",
+      "first_name": "Zavthier",
+      "description": "The person with long white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/zavthier-1-285x399.webp?t=1754066642"
+    }
+  },
+  "food_for_the_soul": {
+    "kurea": {
+      "full_name": "Kurea FURUTACHI",
+      "first_name": "Kurea",
+      "description": "the woman with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kurea-furutachi-1-285x399.webp?t=1747596847"
+    },
+    "mako": {
+      "full_name": "Mako KAWAI",
+      "first_name": "Mako",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mako-kawai-1-285x399.webp?t=1750011442"
+    },
+    "nana": {
+      "full_name": "Nana HOSHI",
+      "first_name": "Nana",
+      "description": "The woman with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/nana-hoshi-1-285x399.webp?t=1749482433"
+    },
+    "shinon": {
+      "full_name": "Shinon OGAWA",
+      "first_name": "Shinon",
+      "description": "the woman with long light brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shinon-ogawa-1-285x399.webp?t=1744527150"
+    },
+    "tsutsuji": {
+      "full_name": "Tsutsuji HIGA",
+      "first_name": "Tsutsuji",
+      "description": "The person with long light brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/tsutsuji-higa-1-285x399.webp?t=1745136887"
+    },
+    "mayumi": {
+      "full_name": "Mayumi OOTA",
+      "first_name": "Mayumi",
+      "description": "The woman with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mayumi-oota-1-285x399.webp?t=1749482348"
+    },
+    "mokotarou": {
+      "full_name": "Mokotarou",
+      "first_name": "Mokotarou",
+      "description": "The yellow creature with leaf ears",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mokotarou-1-285x399.webp?t=1744527395"
+    },
+    "kurea's": {
+      "full_name": "Kurea's Mother",
+      "first_name": "Kurea's",
+      "description": "The woman with long brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kureas-mother-1-285x399.webp?t=1745707270"
+    },
+    "photo": {
+      "full_name": "Photo Staff",
+      "first_name": "Photo",
+      "description": "the person with short gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/photo-staff-1-190x266.webp?t=1748121439"
+    },
+    "runa": {
+      "full_name": "Runa HOSHI",
+      "first_name": "Runa",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/runa-hoshi-1-285x399.webp?t=1748816108"
+    },
+    "sakura": {
+      "full_name": "Sakura KODAMA",
+      "first_name": "Sakura",
+      "description": "The woman with long pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sakura-kodama-1-285x399.webp?t=1748816739"
+    },
+    "teacher": {
+      "full_name": "Teacher",
+      "first_name": "Teacher",
+      "description": "the man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/teacher-food-for-the-soul-1-148x208.webp?t=1745707528"
+    },
+    "yuna": {
+      "full_name": "Yuna",
+      "first_name": "Yuna",
+      "description": "The young girl with purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yuna-food-for-the-soul-1-285x399.webp?t=1749483012"
+    }
+  },
+  "frieren_beyond_journeys_end": {
+    "frieren": {
+      "full_name": "Frieren",
+      "first_name": "Frieren",
+      "description": "The woman with long white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/frieren-1-285x399.webp?t=1697610329"
+    },
+    "eisen": {
+      "full_name": "Eisen",
+      "first_name": "Eisen",
+      "description": "the person with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/eisen-frieren-beyond-journeys-end-1-285x399.webp?t=1696050805"
+    },
+    "fern": {
+      "full_name": "Fern",
+      "first_name": "Fern",
+      "description": "The woman with long purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/fern-frieren-beyond-journeys-end-1-285x399.webp?t=1697683316"
+    },
+    "heiter": {
+      "full_name": "Heiter",
+      "first_name": "Heiter",
+      "description": "The man with short green hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/heiter-1-285x399.webp?t=1696049968"
+    },
+    "himmel": {
+      "full_name": "Himmel",
+      "first_name": "Himmel",
+      "description": "the person with short blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/himmel-1-285x399.webp?t=1696049866"
+    },
+    "sein": {
+      "full_name": "Sein",
+      "first_name": "Sein",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sein-frieren-beyond-journeys-end-1-285x399.webp?t=1701593669"
+    },
+    "stark": {
+      "full_name": "Stark",
+      "first_name": "Stark",
+      "description": "The man with red hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/stark-frieren-beyond-journeys-end-1-285x399.webp?t=1697611709"
+    },
+    "aura": {
+      "full_name": "Aura",
+      "first_name": "Aura",
+      "description": "The woman with long purple hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/aura-frieren-beyond-journeys-end-1-285x399.webp?t=1700808001"
+    },
+    "bakery": {
+      "full_name": "Bakery Owner",
+      "first_name": "Bakery",
+      "description": "the woman with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/bakery-owner-frieren-beyond-journeys-end-1-285x399.webp?t=1697531042"
+    },
+    "blei": {
+      "full_name": "Blei",
+      "first_name": "Blei",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "castellan": {
+      "full_name": "Castellan",
+      "first_name": "Castellan",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "chief": {
+      "full_name": "Chief of the Sword Village",
+      "first_name": "Chief",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "demon": {
+      "full_name": "Demon Child",
+      "first_name": "Demon",
+      "description": "The person with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/demon-child-frieren-beyond-journeys-end-1-285x399.webp?t=1698528750"
+    },
+    "denken": {
+      "full_name": "Denken",
+      "first_name": "Denken",
+      "description": "The man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/denken-1-285x399.webp?t=1705213313"
+    },
+    "draht": {
+      "full_name": "Draht",
+      "first_name": "Draht",
+      "description": "The person with short blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/draht-1-285x399.webp?t=1698527501"
+    },
+    "d\u00fcnste": {
+      "full_name": "D\u00fcnste",
+      "first_name": "D\u00fcnste",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "edel": {
+      "full_name": "Edel",
+      "first_name": "Edel",
+      "description": "The round creature with horns and tusks.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "ehre": {
+      "full_name": "Ehre",
+      "first_name": "Ehre",
+      "description": "the woman with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ehre-frieren-beyond-journeys-end-1-285x399.webp?t=1706859693"
+    },
+    "elder": {
+      "full_name": "Elder",
+      "first_name": "Elder",
+      "description": "The elderly man with gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/elder-frieren-beyond-journeys-end-1-285x399.webp?t=1698525745"
+    },
+    "falsch": {
+      "full_name": "Falsch",
+      "first_name": "Falsch",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "flamme": {
+      "full_name": "Flamme",
+      "first_name": "Flamme",
+      "description": "The woman with long orange hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/flamme-frieren-beyond-journeys-end-1-285x399.webp?t=1722168817"
+    },
+    "gabel": {
+      "full_name": "Gabel",
+      "first_name": "Gabel",
+      "description": "the man with gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/gabel-frieren-beyond-journeys-end-1-285x399.webp?t=1704965977"
+    },
+    "genau": {
+      "full_name": "Genau",
+      "first_name": "Genau",
+      "description": "The man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/genau-1-285x399.webp?t=1705211115"
+    },
+    "gorilla": {
+      "full_name": "Gorilla",
+      "first_name": "Gorilla",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/gorilla-frieren-beyond-journeys-end-1-285x399.webp?t=1704967117"
+    },
+    "granat": {
+      "full_name": "Granat",
+      "first_name": "Granat",
+      "description": "the man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/granat-1-285x399.webp?t=1700825931"
+    },
+    "herbalist": {
+      "full_name": "Herbalist",
+      "first_name": "Herbalist",
+      "description": "The elderly woman with gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/herbalist-frieren-beyond-journeys-end-1-285x399.webp?t=1696103730"
+    },
+    "kanne": {
+      "full_name": "Kanne",
+      "first_name": "Kanne",
+      "description": "The woman with short brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kanne-1-285x399.webp?t=1722168956"
+    },
+    "king": {
+      "full_name": "King",
+      "first_name": "King",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "kraft": {
+      "full_name": "Kraft",
+      "first_name": "Kraft",
+      "description": "The man with short brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kraft-frieren-beyond-journeys-end-1-285x399.webp?t=1700818870"
+    },
+    "land": {
+      "full_name": "Land",
+      "first_name": "Land",
+      "description": "The man with blond hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/land-frieren-beyond-journeys-end-1-285x399.webp?t=1705213041"
+    },
+    "l\u00e4nge": {
+      "full_name": "L\u00e4nge",
+      "first_name": "L\u00e4nge",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "laufen": {
+      "full_name": "Laufen",
+      "first_name": "Laufen",
+      "description": "The woman with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/laufen-1-285x399.webp?t=1705213386"
+    },
+    "lawine": {
+      "full_name": "Lawine",
+      "first_name": "Lawine",
+      "description": "The woman with long gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lawine-1-285x399.webp?t=1722168925"
+    },
+    "lecker": {
+      "full_name": "Lecker",
+      "first_name": "Lecker",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "lernen": {
+      "full_name": "Lernen",
+      "first_name": "Lernen",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "linie": {
+      "full_name": "Linie",
+      "first_name": "Linie",
+      "description": "The woman with pink hair and horns.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/linie-1-285x398.webp?t=1698527397"
+    },
+    "l\u00fcgner": {
+      "full_name": "L\u00fcgner",
+      "first_name": "L\u00fcgner",
+      "description": "The person with long blonde hair and horns.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lugner-1-285x399.webp?t=1698527232"
+    },
+    "methode": {
+      "full_name": "Methode",
+      "first_name": "Methode",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "military": {
+      "full_name": "Military Old Man",
+      "first_name": "Military",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "mut": {
+      "full_name": "Mut",
+      "first_name": "Mut",
+      "description": "The person with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mut-1-285x399.webp?t=1704965408"
+    },
+    "old": {
+      "full_name": "Old Woman",
+      "first_name": "Old",
+      "description": "the elderly woman with gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/old-woman-frieren-beyond-journeys-end-1-167x234.webp?t=1697531593"
+    },
+    "orden": {
+      "full_name": "Orden",
+      "first_name": "Orden",
+      "description": "The man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/orden-1-285x398.webp?t=1704965347"
+    },
+    "priest": {
+      "full_name": "Priest",
+      "first_name": "Priest",
+      "description": "The person with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/priest-frieren-beyond-journeys-end-1-285x399.webp?t=1700808121"
+    },
+    "qual": {
+      "full_name": "Qual",
+      "first_name": "Qual",
+      "description": "The horned creature with long white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/qual-1-285x399.webp?t=1696122925"
+    },
+    "richter": {
+      "full_name": "Richter",
+      "first_name": "Richter",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/richter-frieren-beyond-journeys-end-1-285x399.webp?t=1722168863"
+    },
+    "richter's": {
+      "full_name": "Richter's Customer",
+      "first_name": "Richter's",
+      "description": "The elderly woman with long white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/richters-customer-1-285x399.webp?t=1722170961"
+    },
+    "scharf": {
+      "full_name": "Scharf",
+      "first_name": "Scharf",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/scharf-1-285x399.webp?t=1706862464"
+    },
+    "sein's": {
+      "full_name": "Sein's Brother",
+      "first_name": "Sein's",
+      "description": "The person with long brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/seins-brother-1-285x399.webp?t=1701593885"
+    },
+    "sense": {
+      "full_name": "Sense",
+      "first_name": "Sense",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sense-1-285x399.webp?t=1722169312"
+    },
+    "serie": {
+      "full_name": "Serie",
+      "first_name": "Serie",
+      "description": "the person with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/serie-frieren-beyond-journeys-end-1-285x398.webp?t=1722168758"
+    },
+    "stark's": {
+      "full_name": "Stark's Father",
+      "first_name": "Stark's",
+      "description": "The man with dark hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/starks-father-1-285x399.webp?t=1700973046"
+    },
+    "stoltz": {
+      "full_name": "Stoltz",
+      "first_name": "Stoltz",
+      "description": "the man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/stoltz-1-285x399.webp?t=1700973001"
+    },
+    "ton": {
+      "full_name": "Ton",
+      "first_name": "Ton",
+      "description": "The round creature with horns and tusks.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "\u00fcbel": {
+      "full_name": "\u00dcbel",
+      "first_name": "\u00dcbel",
+      "description": "The woman with long green hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ubel-frieren-beyond-journeys-end-1-285x399.webp?t=1705213086"
+    },
+    "village": {
+      "full_name": "Village Chief",
+      "first_name": "Village",
+      "description": "The bald person.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/village-chief-frieren-beyond-journeys-end-1-285x399.webp?t=1697531663"
+    },
+    "voll": {
+      "full_name": "Voll",
+      "first_name": "Voll",
+      "description": "The elderly man with a long white beard.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/voll-1-285x399.webp?t=1704966895"
+    },
+    "wirbel": {
+      "full_name": "Wirbel",
+      "first_name": "Wirbel",
+      "description": "the man with short gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/wirbel-1-285x399.webp?t=1705211179"
+    },
+    "wirt": {
+      "full_name": "Wirt",
+      "first_name": "Wirt",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/wirt-1-285x399.webp?t=1704965846"
+    }
+  },
+  "i_left_my_a_rank_party_to_help_my_former_students_reach_the_dungeon_depths": {
+    "marina": {
+      "full_name": "Marina",
+      "first_name": "Marina",
+      "description": "The woman with long red hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/marina-a-rank-party-wo-ridatsu-shita-ore-wa-moto-oshigoto-tachi-to-meikyuu-shinbu-wo-mezasu-light-novel-1-285x399.webp?t=1737839426"
+    },
+    "rain": {
+      "full_name": "Rain",
+      "first_name": "Rain",
+      "description": "the person with long blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/rain-a-rank-party-wo-ridatsu-shita-ore-wa-moto-oshigoto-tachi-to-meikyuu-shinbu-wo-mezasu-1-285x399.webp?t=1737839399"
+    },
+    "silk": {
+      "full_name": "Silk",
+      "first_name": "Silk",
+      "description": "the woman with long white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/silk-a-rank-party-wo-ridatsu-shita-ore-wa-moto-oshigoto-tachi-to-meikyuu-shinbu-wo-mezasu-1-285x399.webp?t=1737839368"
+    },
+    "yuke": {
+      "full_name": "Yuke FELDIO",
+      "first_name": "Yuke",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yuke-feldio-1-285x399.webp?t=1737838692"
+    },
+    "barry": {
+      "full_name": "Barry",
+      "first_name": "Barry",
+      "description": "the man with short brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/barry-a-rank-party-wo-ridatsu-shita-ore-wa-moto-oshigoto-tachi-to-meikyuu-shinbu-wo-mezasu-1-285x399.webp?t=1737838754"
+    },
+    "benwood": {
+      "full_name": "Benwood",
+      "first_name": "Benwood",
+      "description": "The man with short gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/benwood-1-285x399.webp?t=1737839858"
+    },
+    "camilla": {
+      "full_name": "Camilla",
+      "first_name": "Camilla",
+      "description": "The woman with long green hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/camilla-a-rank-party-wo-ridatsu-shita-ore-wa-moto-oshigoto-tachi-to-meikyuu-shinbu-wo-mezasu-1-285x399.webp?t=1739831552"
+    },
+    "loge": {
+      "full_name": "Loge VORDANIAN",
+      "first_name": "Loge",
+      "description": "The elderly person with gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/loge-vordanian-1-285x399.webp?t=1745085125"
+    },
+    "mastoma": {
+      "full_name": "Mastoma SALMUTARIA",
+      "first_name": "Mastoma",
+      "description": "The man with long black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mastoma-salmutaria-1-285x399.webp?t=1747828025"
+    },
+    "nene": {
+      "full_name": "Nene SHILFINDLE",
+      "first_name": "Nene",
+      "description": "The woman with short orange hair and fox ears.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/nene-shilfindle-1-285x399.webp?t=1739831647"
+    },
+    "niberune": {
+      "full_name": "Niberune",
+      "first_name": "Niberune",
+      "description": "The woman with long pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/niberune-1-285x399.webp?t=1744482887"
+    },
+    "simon": {
+      "full_name": "Simon BERKLEY",
+      "first_name": "Simon",
+      "description": "The man with short blond hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/simon-berkley-1-285x399.webp?t=1737839335"
+    },
+    "bedibore": {
+      "full_name": "Bedibore",
+      "first_name": "Bedibore",
+      "description": "The man with short gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/bedibore-1-285x399.webp?t=1743877286"
+    },
+    "besio": {
+      "full_name": "Besio SALAS",
+      "first_name": "Besio",
+      "description": "the man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/besio-salas-1-285x399.webp?t=1737839239"
+    },
+    "biblion": {
+      "full_name": "Biblion",
+      "first_name": "Biblion",
+      "description": "The white dragon with red eyes.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/biblion-1-285x399.webp?t=1744483614"
+    },
+    "bodeman": {
+      "full_name": "Bodeman",
+      "first_name": "Bodeman",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/bodeman-1-285x399.webp?t=1743877128"
+    },
+    "bran": {
+      "full_name": "Bran CROWDER",
+      "first_name": "Bran",
+      "description": "The bald man with blue hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/bran-crowder-1-285x399.webp?t=1745085250"
+    },
+    "camelat": {
+      "full_name": "Camelat",
+      "first_name": "Camelat",
+      "description": "The purple flying creature with a single eye.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/camelat-1-285x399.webp?t=1737839573"
+    },
+    "cork": {
+      "full_name": "Cork",
+      "first_name": "Cork",
+      "description": "The man with short purple hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/cork-1-285x399.webp?t=1737839521"
+    },
+    "darcas": {
+      "full_name": "Darcas",
+      "first_name": "Darcas",
+      "description": "The bald man with a red beard.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/darcas-1-285x399.webp?t=1744483401"
+    },
+    "fina": {
+      "full_name": "Fina",
+      "first_name": "Fina",
+      "description": "the woman with long green hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/fina-i-left-my-a-rank-party-to-help-my-former-students-reach-the-dungeon-depths-1-285x399.webp?t=1742665228"
+    },
+    "forneia": {
+      "full_name": "Forneia Captain",
+      "first_name": "Forneia",
+      "description": "The man with long gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/forneia-captain-1-285x399.webp?t=1747506566"
+    },
+    "gato": {
+      "full_name": "Gato",
+      "first_name": "Gato",
+      "description": "the purple bat creature",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/gato-i-left-my-a-rank-party-to-help-my-former-students-reach-the-dungeon-depths-1-285x399.webp?t=1743723651"
+    },
+    "jamie": {
+      "full_name": "Jamie OSEN",
+      "first_name": "Jamie",
+      "description": "the woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/jamie-osen-1-285x399.webp?t=1747506401"
+    },
+    "lucent": {
+      "full_name": "Lucent",
+      "first_name": "Lucent",
+      "description": "the man with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lucent-1-285x399.webp?t=1744482857"
+    },
+    "maje": {
+      "full_name": "Maje",
+      "first_name": "Maje",
+      "description": "The woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/maje-1-285x399.webp?t=1744483461"
+    },
+    "mamar": {
+      "full_name": "Mamar",
+      "first_name": "Mamar",
+      "description": "The woman with long pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mamar-1-285x399.webp?t=1737838942"
+    },
+    "maniella": {
+      "full_name": "Maniella",
+      "first_name": "Maniella",
+      "description": "The elderly woman with long pink hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/maniella-1-285x399.webp?t=1742665058"
+    },
+    "marona": {
+      "full_name": "Marona",
+      "first_name": "Marona",
+      "description": "the woman with long pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/marona-1-285x399.webp?t=1744483004"
+    },
+    "mejarna": {
+      "full_name": "Mejarna",
+      "first_name": "Mejarna",
+      "description": "The woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mejarna-1-285x399.webp?t=1746293541"
+    },
+    "miriam": {
+      "full_name": "Miriam",
+      "first_name": "Miriam",
+      "description": "The woman with long purple hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/miriam-i-left-my-a-rank-party-to-help-my-former-students-reach-the-dungeon-depths-1-285x399.webp?t=1744483285"
+    },
+    "monday": {
+      "full_name": "Monday",
+      "first_name": "Monday",
+      "description": "The man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/monday-i-left-my-a-rank-party-to-help-my-former-students-reach-the-dungeon-depths-1-285x399.webp?t=1739831660"
+    },
+    "moria": {
+      "full_name": "Moria",
+      "first_name": "Moria",
+      "description": "The elderly man with long white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/moria-i-left-my-a-rank-party-to-help-my-former-students-reach-the-dungeon-depths-1-285x399.webp?t=1745085388"
+    },
+    "persephone": {
+      "full_name": "Persephone",
+      "first_name": "Persephone",
+      "description": "The woman with long white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/persephone-i-left-my-a-rank-party-to-help-my-former-students-reach-the-dungeon-depths-1-285x399.webp?t=1740288631"
+    },
+    "rahuma": {
+      "full_name": "Rahuma",
+      "first_name": "Rahuma",
+      "description": "The man with short brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/rahuma-1-285x399.webp?t=1748713173"
+    },
+    "saga": {
+      "full_name": "Saga",
+      "first_name": "Saga",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/saga-i-left-my-a-rank-party-to-help-my-former-students-reach-the-dungeon-depths-1-285x399.webp?t=1749318437"
+    },
+    "salmutaria": {
+      "full_name": "Salmutaria Bandit Boss",
+      "first_name": "Salmutaria",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/salmutaria-bandit-boss-1-285x399.webp?t=1747506652"
+    },
+    "sho": {
+      "full_name": "Sho",
+      "first_name": "Sho",
+      "description": "The small cat creature",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sho-i-left-my-a-rank-party-to-help-my-former-students-reach-the-dungeon-depths-1-285x399.webp?t=1743723602"
+    },
+    "vincent": {
+      "full_name": "Vincent V",
+      "first_name": "Vincent",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/vincent-v-1-285x399.webp?t=1747828050"
+    },
+    "vordan": {
+      "full_name": "Vordan",
+      "first_name": "Vordan",
+      "description": "the man with long white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/vordan-1-285x399.webp?t=1745689379"
+    },
+    "zaccard": {
+      "full_name": "Zaccard",
+      "first_name": "Zaccard",
+      "description": "The man with short brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/zaccard-1-285x399.webp?t=1743269105"
+    }
+  },
+  "lycoris_recoil": {
+    "chisato": {
+      "full_name": "Chisato NISHIKIGI",
+      "first_name": "Chisato",
+      "description": "The woman with short white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/chisato-nishikigi-1-285x400.webp?t=1660272834"
+    },
+    "takina": {
+      "full_name": "Takina INOUE",
+      "first_name": "Takina",
+      "description": "The woman with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/takina-inoue-1-285x400.webp?t=1658094777"
+    },
+    "kurumi": {
+      "full_name": "Kurumi",
+      "first_name": "Kurumi",
+      "description": "The woman with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kurumi-lycoris-recoil-1-285x399.webp?t=1657396132"
+    },
+    "kusunoki": {
+      "full_name": "Kusunoki",
+      "first_name": "Kusunoki",
+      "description": "The man with red hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kusunoki-lycoris-recoil-1-285x400.webp?t=1661305387"
+    },
+    "majima": {
+      "full_name": "Majima",
+      "first_name": "Majima",
+      "description": "The man with green hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/majima-lycoris-recoil-1-285x400.webp?t=1660613618"
+    },
+    "mika": {
+      "full_name": "Mika",
+      "first_name": "Mika",
+      "description": "the man with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mika-lycoris-recoil-1-285x400.webp?t=1660272905"
+    },
+    "mizuki": {
+      "full_name": "Mizuki NAKAHARA",
+      "first_name": "Mizuki",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mizuki-nakahara-1-285x400.webp?t=1661548595"
+    },
+    "shinji": {
+      "full_name": "Shinji YOSHIMATSU",
+      "first_name": "Shinji",
+      "description": "The man with blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shinji-yoshimatsu-1-285x399.webp?t=1657396649"
+    },
+    "abe": {
+      "full_name": "Abe",
+      "first_name": "Abe",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/abe-lycoris-recoil-1-285x400.webp?t=1656822710"
+    },
+    "erika": {
+      "full_name": "Erika JIYANOME",
+      "first_name": "Erika",
+      "description": "the person with short pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/erika-jiyanome-1-285x400.webp?t=1656823637"
+    },
+    "fuki": {
+      "full_name": "Fuki HARUKAWA",
+      "first_name": "Fuki",
+      "description": "the person with short brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/fuki-harukawa-1-285x400.webp?t=1656823494"
+    },
+    "goto": {
+      "full_name": "Goto",
+      "first_name": "Goto",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "hacker": {
+      "full_name": "Hacker",
+      "first_name": "Hacker",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "hibana": {
+      "full_name": "Hibana KAGARI",
+      "first_name": "Hibana",
+      "description": "The person with blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hibana-kagari-lycoris-recoil-1-285x400.webp?t=1658094653"
+    },
+    "himegama": {
+      "full_name": "Himegama",
+      "first_name": "Himegama",
+      "description": "the woman with long pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/himegama-1-285x399.webp?t=1661547908"
+    },
+    "itadori": {
+      "full_name": "Itadori",
+      "first_name": "Itadori",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "ito": {
+      "full_name": "Ito",
+      "first_name": "Ito",
+      "description": "the woman with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ito-lycoris-recoil-1-285x400.webp?t=1661306125"
+    },
+    "jin": {
+      "full_name": "Jin",
+      "first_name": "Jin",
+      "description": "The man with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/jin-lycoris-recoil-1-285x399.webp?t=1660613340"
+    },
+    "kitamura": {
+      "full_name": "Kitamura",
+      "first_name": "Kitamura",
+      "description": "The woman with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kitamura-lycoris-recoil-1-285x400.webp?t=1661550285"
+    },
+    "kusunoki's": {
+      "full_name": "Kusunoki's Assistant",
+      "first_name": "Kusunoki's",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "lilybell": {
+      "full_name": "LilyBell Officer",
+      "first_name": "LilyBell",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "matsushita": {
+      "full_name": "Matsushita",
+      "first_name": "Matsushita",
+      "description": "The elderly man with gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/matsushita-lycoris-recoil-1-285x399.webp?t=1660273219"
+    },
+    "mitani": {
+      "full_name": "Mitani",
+      "first_name": "Mitani",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "robota": {
+      "full_name": "Robota",
+      "first_name": "Robota",
+      "description": "The person with a robot box head.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/robota-1-285x399.webp?t=1660613466"
+    },
+    "sakura": {
+      "full_name": "Sakura OTOME",
+      "first_name": "Sakura",
+      "description": "the woman with short orange hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sakura-otome-1-285x399.webp?t=1661305596"
+    },
+    "saori": {
+      "full_name": "Saori SHINOHARA",
+      "first_name": "Saori",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/saori-shinohara-1-285x399.webp?t=1656822625"
+    },
+    "yamadera": {
+      "full_name": "Yamadera",
+      "first_name": "Yamadera",
+      "description": "The round creature with horns and tusks.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "yamagishi": {
+      "full_name": "Yamagishi",
+      "first_name": "Yamagishi",
+      "description": "the woman with short black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yamagishi-lycoris-recoil-1-285x400.webp?t=1661549093"
+    },
+    "yoneoka": {
+      "full_name": "Yoneoka",
+      "first_name": "Yoneoka",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    }
+  },
+  "more_than_a_married_couple_but_not_lovers": {
+    "akari": {
+      "full_name": "Akari WATANABE",
+      "first_name": "Akari",
+      "description": "The woman with long pink hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/akari-watanabe-1-285x399.webp?t=1734989674"
+    },
+    "jiro": {
+      "full_name": "Jiro YAKUIN",
+      "first_name": "Jiro",
+      "description": "the man with blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/jiro-yakuin-1-285x400.webp?t=1667104585"
+    },
+    "minami": {
+      "full_name": "Minami TENJIN",
+      "first_name": "Minami",
+      "description": "The man with blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/minami-tenjin-1-285x400.webp?t=1665877360"
+    },
+    "sadaharu": {
+      "full_name": "Sadaharu KAMO",
+      "first_name": "Sadaharu",
+      "description": "The person with long green hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sadaharu-kamo-1-285x400.webp?t=1667105678"
+    },
+    "shiori": {
+      "full_name": "Shiori SAKURAZAKA",
+      "first_name": "Shiori",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shiori-sakurazaka-1-285x400.webp?t=1665879040"
+    },
+    "homeroom": {
+      "full_name": "Homeroom Teacher",
+      "first_name": "Homeroom",
+      "description": "The woman with long brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/homeroom-teacher-more-than-a-married-couple-but-not-lovers-1-285x399.webp?t=1665880833"
+    },
+    "linda": {
+      "full_name": "Linda",
+      "first_name": "Linda",
+      "description": "The woman with long light brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/linda-more-than-a-married-couple-but-not-lovers-1-285x400.webp?t=1667100929"
+    },
+    "marin": {
+      "full_name": "Marin HASHIMOTO",
+      "first_name": "Marin",
+      "description": "The woman with purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/marin-hashimoto-1-285x400.webp?t=1667104272"
+    },
+    "mei": {
+      "full_name": "Mei HAMANO",
+      "first_name": "Mei",
+      "description": "the person with red hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mei-hamano-1-285x400.webp?t=1667105382"
+    },
+    "natsumi": {
+      "full_name": "Natsumi OHASHI",
+      "first_name": "Natsumi",
+      "description": "the woman with long red hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/natsumi-ohashi-1-285x400.webp?t=1667101576"
+    },
+    "pe": {
+      "full_name": "PE Teacher",
+      "first_name": "PE",
+      "description": "the man with dark hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/pe-teacher-more-than-a-married-couple-but-not-lovers-1-285x400.webp?t=1667526159"
+    },
+    "sachi": {
+      "full_name": "Sachi TAKAMIYA",
+      "first_name": "Sachi",
+      "description": "The woman with long orange hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sachi-takamiya-1-285x400.webp?t=1667104931"
+    },
+    "shu": {
+      "full_name": "Shu TERAFUNE",
+      "first_name": "Shu",
+      "description": "the man with light hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shu-terafune-1-190x266.jpg?t=1756871456"
+    },
+    "steve": {
+      "full_name": "Steve",
+      "first_name": "Steve",
+      "description": "The person with light hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/steve-more-than-a-married-couple-but-not-lovers-1-285x400.webp?t=1667101301"
+    }
+  },
+  "my_dress_up_darling": {
+    "marin": {
+      "full_name": "Marin KITAGAWA",
+      "first_name": "Marin",
+      "description": "The woman with long pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/marin-kitagawa-1-285x400.webp?t=1641698248"
+    },
+    "wakana": {
+      "full_name": "Wakana GOJO",
+      "first_name": "Wakana",
+      "description": "the man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/wakana-gojo-1-285x399.webp?t=1641698088"
+    },
+    "kaoru": {
+      "full_name": "Kaoru GOJO",
+      "first_name": "Kaoru",
+      "description": "The elderly man with white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kaoru-gojo-1-285x399.webp?t=1642460197"
+    },
+    "sajuna": {
+      "full_name": "Sajuna INUI",
+      "first_name": "Sajuna",
+      "description": "the woman with long pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sajuna-inui-1-285x399.webp?t=1646588687"
+    },
+    "shinju": {
+      "full_name": "Shinju INUI",
+      "first_name": "Shinju",
+      "description": "The woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shinju-inui-1-285x399.webp?t=1646588080"
+    },
+    "shizuku": {
+      "full_name": "Shizuku KUROE",
+      "first_name": "Shizuku",
+      "description": "The woman with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shizuku-kuroe-1-285x399.webp?t=1730669712"
+    },
+    "daia": {
+      "full_name": "Daia YAHIRO",
+      "first_name": "Daia",
+      "description": "the woman with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/daia-yahiro-1-285x399.webp?t=1751770831"
+    },
+    "doctor": {
+      "full_name": "Doctor",
+      "first_name": "Doctor",
+      "description": "the man with gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/doctor-my-dress-up-darling-1-285x399.webp?t=1645387403"
+    },
+    "female": {
+      "full_name": "Female Visitor",
+      "first_name": "Female",
+      "description": "The person with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/female-visitor-1-285x399.webp?t=1645387475"
+    },
+    "hair": {
+      "full_name": "Hair Salon Customer",
+      "first_name": "Hair",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hair-salon-customer-1-285x400.webp?t=1646589535"
+    },
+    "hanaoka": {
+      "full_name": "Hanaoka",
+      "first_name": "Hanaoka",
+      "description": "The woman with short brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hanaoka-my-dress-up-darling-1-285x400.webp?t=1645387323"
+    },
+    "kaname": {
+      "full_name": "Kaname",
+      "first_name": "Kaname",
+      "description": "The young boy with dark blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kaname-my-dress-up-darling-1-285x400.webp?t=1649111285"
+    },
+    "kensei": {
+      "full_name": "Kensei MORITA",
+      "first_name": "Kensei",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kensei-morita-1-285x399.webp?t=1754768118"
+    },
+    "liz": {
+      "full_name": "Liz",
+      "first_name": "Liz",
+      "description": "The young girl with long pink hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/liz-my-dress-up-darling-1-285x400.webp?t=1649111430"
+    },
+    "love": {
+      "full_name": "Love Hotel Customer",
+      "first_name": "Love",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/love-hotel-customer-1-285x400.webp?t=1649113107"
+    },
+    "male": {
+      "full_name": "Male Visitor",
+      "first_name": "Male",
+      "description": "the man with short blond hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/male-visitor-1-285x400.webp?t=1645387530"
+    },
+    "miori": {
+      "full_name": "Miori GOJO",
+      "first_name": "Miori",
+      "description": "The woman with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/miori-gojo-1-285x400.webp?t=1645387048"
+    },
+    "mirai": {
+      "full_name": "Mirai TENGEJI",
+      "first_name": "Mirai",
+      "description": "the young girl with long pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mirai-tengeji-1-285x399.webp?t=1646588954"
+    },
+    "neon": {
+      "full_name": "Neon NIKAIDO",
+      "first_name": "Neon",
+      "description": "The woman with long white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/neon-nikaido-1-285x400.webp?t=1646588745"
+    },
+    "neon's": {
+      "full_name": "Neon's Flower Pet",
+      "first_name": "Neon's",
+      "description": "The small gray creature with red eyes.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/neons-flower-pet-1-285x400.webp?t=1646589198"
+    },
+    "nobara": {
+      "full_name": "Nobara",
+      "first_name": "Nobara",
+      "description": "The young girl with long brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/nobara-my-dress-up-darling-1-285x399.webp?t=1641699498"
+    },
+    "nowa": {
+      "full_name": "Nowa SUGAYA",
+      "first_name": "Nowa",
+      "description": "The woman with long black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/nowa-sugaya-1-285x399.webp?t=1643255699"
+    },
+    "photographer": {
+      "full_name": "Photographer",
+      "first_name": "Photographer",
+      "description": "The man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/photographer-my-dress-up-darling-1-285x399.webp?t=1645387223"
+    },
+    "restaurant": {
+      "full_name": "Restaurant Customer",
+      "first_name": "Restaurant",
+      "description": "the woman with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/restaurant-customer-1-285x400.webp?t=1646589458"
+    },
+    "rune": {
+      "full_name": "Rune YAMAUCHI",
+      "first_name": "Rune",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/rune-yamauchi-1-285x399.webp?t=1751770823"
+    },
+    "sakuya": {
+      "full_name": "Sakuya",
+      "first_name": "Sakuya",
+      "description": "the person with short gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sakuya-my-dress-up-darling-1-285x399.webp?t=1646588628"
+    },
+    "shiki": {
+      "full_name": "Shiki KASHIWAGI",
+      "first_name": "Shiki",
+      "description": "The man with short blond hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shiki-kashiwagi-1-255x358.webp?t=1649113281"
+    },
+    "shion": {
+      "full_name": "Shion NIKAIDO",
+      "first_name": "Shion",
+      "description": "the person with short blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shion-nikaido-1-285x400.webp?t=1646588748"
+    },
+    "shion's": {
+      "full_name": "Shion's Flower Pet",
+      "first_name": "Shion's",
+      "description": "The small rabbit-like creature",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shions-flower-pet-1-285x400.webp?t=1646589173"
+    },
+    "soma": {
+      "full_name": "Soma",
+      "first_name": "Soma",
+      "description": "the man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/soma-my-dress-up-darling-1-285x400.webp?t=1646588580"
+    },
+    "store": {
+      "full_name": "Store Employee",
+      "first_name": "Store",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/store-employee-1-285x399.webp?t=1649113768"
+    },
+    "suzuka": {
+      "full_name": "Suzuka",
+      "first_name": "Suzuka",
+      "description": "the woman with short brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/suzuka-my-dress-up-darling-1-285x399.webp?t=1646589310"
+    },
+    "veronica": {
+      "full_name": "Veronica",
+      "first_name": "Veronica",
+      "description": "The woman with white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/veronica-my-dress-up-darling-1-285x399.webp?t=1727401164"
+    }
+  },
+  "once_upon_a_witchs_death": {
+    "meg": {
+      "full_name": "Meg RASPBERRY",
+      "first_name": "Meg",
+      "description": "The woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/meg-raspberry-1-285x399.webp?t=1748204589"
+    },
+    "carbuncle": {
+      "full_name": "Carbuncle",
+      "first_name": "Carbuncle",
+      "description": "the small white creature with large ears",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/carbuncle-once-upon-a-witchs-death-1-285x400.webp?t=1746380536"
+    },
+    "faust": {
+      "full_name": "Faust",
+      "first_name": "Faust",
+      "description": "The elderly woman with long white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/faust-once-upon-a-witchs-death-1-285x399.webp?t=1746382480"
+    },
+    "fine": {
+      "full_name": "Fine CAVENDISH",
+      "first_name": "Fine",
+      "description": "the woman with blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/fine-cavendish-1-285x399.webp?t=1746380163"
+    },
+    "snowy": {
+      "full_name": "Snowy Owl",
+      "first_name": "Snowy",
+      "description": "The white owl creature.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/snowy-owl-1-285x399.webp?t=1746380468"
+    },
+    "sophie": {
+      "full_name": "Sophie HAYTER",
+      "first_name": "Sophie",
+      "description": "the woman with light blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sophie-hayter-1-285x399.webp?t=1748206862"
+    },
+    "anna": {
+      "full_name": "Anna WILLIAMS",
+      "first_name": "Anna",
+      "description": "The young girl with blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/anna-williams-once-upon-a-witchs-death-1-285x399.webp?t=1748204662"
+    },
+    "chloe": {
+      "full_name": "Chloe",
+      "first_name": "Chloe",
+      "description": "the person with long gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/chloe-once-upon-a-witchs-death-1-285x399.webp?t=1748206813"
+    },
+    "ed": {
+      "full_name": "Ed",
+      "first_name": "Ed",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "eldora": {
+      "full_name": "Eldora",
+      "first_name": "Eldora",
+      "description": "the woman with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/eldora-once-upon-a-witchs-death-1-285x399.webp?t=1748206694"
+    },
+    "flare": {
+      "full_name": "Flare",
+      "first_name": "Flare",
+      "description": "The elderly woman with white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/flare-once-upon-a-witchs-death-1-285x399.webp?t=1748207159"
+    },
+    "hendy": {
+      "full_name": "Hendy WILLIAMS",
+      "first_name": "Hendy",
+      "description": "The man with short blond hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hendy-williams-1-285x399.webp?t=1748546972"
+    },
+    "inori": {
+      "full_name": "Inori",
+      "first_name": "Inori",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/inori-once-upon-a-witchs-death-1-285x399.webp?t=1748206727"
+    },
+    "iris": {
+      "full_name": "Iris WILLIAMS",
+      "first_name": "Iris",
+      "description": "The woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/iris-williams-1-285x399.webp?t=1748204766"
+    },
+    "jill": {
+      "full_name": "Jill",
+      "first_name": "Jill",
+      "description": "The woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/jill-once-upon-a-witchs-death-1-285x399.webp?t=1748206963"
+    },
+    "lily": {
+      "full_name": "Lily",
+      "first_name": "Lily",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "marie": {
+      "full_name": "Marie",
+      "first_name": "Marie",
+      "description": "The woman with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/marie-once-upon-a-witchs-death-1-285x399.webp?t=1748207040"
+    },
+    "mary": {
+      "full_name": "Mary",
+      "first_name": "Mary",
+      "description": "the young child with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mary-once-upon-a-witchs-death-1-285x399.webp?t=1748206995"
+    },
+    "rachel": {
+      "full_name": "Rachel",
+      "first_name": "Rachel",
+      "description": "The woman with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/rachel-once-upon-a-witchs-death-1-285x399.webp?t=1748547034"
+    },
+    "ted": {
+      "full_name": "Ted",
+      "first_name": "Ted",
+      "description": "the man with short brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ted-once-upon-a-witchs-death-1-285x399.webp?t=1748207120"
+    },
+    "wendy": {
+      "full_name": "Wendy",
+      "first_name": "Wendy",
+      "description": "The woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/wendy-once-upon-a-witchs-death-1-285x399.webp?t=1748207210"
+    },
+    "wolf": {
+      "full_name": "Wolf Man",
+      "first_name": "Wolf",
+      "description": "the wolf-like creature with blue fur",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/wolf-man-1-285x399.webp?t=1748207091"
+    },
+    "zepeto": {
+      "full_name": "Zepeto",
+      "first_name": "Zepeto",
+      "description": "The elderly man with white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/zepeto-1-285x399.webp?t=1748207251"
+    }
+  },
+  "rascal_does_not_dream_of_bunny_girl_senpai": {
+    "mai": {
+      "full_name": "Mai SAKURAJIMA",
+      "first_name": "Mai",
+      "description": "The woman with long black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mai-sakurajima-1-190x266.jpg?t=1626005530"
+    },
+    "sakuta": {
+      "full_name": "Sakuta AZUSAGAWA",
+      "first_name": "Sakuta",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sakuta-azusagawa-1-190x266.jpg?t=1626005530"
+    },
+    "kaede": {
+      "full_name": "Kaede AZUSAGAWA",
+      "first_name": "Kaede",
+      "description": "The woman with long brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kaede-azusagawa-1-190x266.jpg?t=1626009270"
+    },
+    "nodoka": {
+      "full_name": "Nodoka TOYOHAMA",
+      "first_name": "Nodoka",
+      "description": "the woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/nodoka-toyohama-1-190x266.jpg?t=1626010518"
+    },
+    "rio": {
+      "full_name": "Rio FUTABA",
+      "first_name": "Rio",
+      "description": "The woman with long gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/rio-futaba-1-285x399.webp?t=1735573563"
+    },
+    "tomoe": {
+      "full_name": "Tomoe KOGA",
+      "first_name": "Tomoe",
+      "description": "The woman with short brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/tomoe-koga-1-190x266.jpg?t=1626009752"
+    },
+    "fumika": {
+      "full_name": "Fumika NANJO",
+      "first_name": "Fumika",
+      "description": "the woman with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/fumika-nanjo-1-190x266.jpg?t=1626011224"
+    },
+    "hayate": {
+      "full_name": "Hayate",
+      "first_name": "Hayate",
+      "description": "The small white cat creature.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hayate-rascal-does-not-dream-of-bunny-girl-senpai-1-190x266.jpg?t=1626012031"
+    },
+    "kotomi": {
+      "full_name": "Kotomi KANO",
+      "first_name": "Kotomi",
+      "description": "The woman with long brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kotomi-kano-1-190x266.jpg?t=1626012272"
+    },
+    "mai's": {
+      "full_name": "Mai's Mother",
+      "first_name": "Mai's",
+      "description": "the woman with long gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mais-mother-rascal-does-not-dream-of-bunny-girl-senpai-1-285x399.webp?t=1735573769"
+    },
+    "miwako": {
+      "full_name": "Miwako TOMOBE",
+      "first_name": "Miwako",
+      "description": "The woman with long gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/miwako-tomobe-1-190x266.jpg?t=1626012293"
+    },
+    "nana": {
+      "full_name": "Nana YONEYAMA",
+      "first_name": "Nana",
+      "description": "the woman with short brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/nana-yoneyama-1-190x266.jpg?t=1626011797"
+    },
+    "nasuno": {
+      "full_name": "Nasuno",
+      "first_name": "Nasuno",
+      "description": "The small cat creature",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/nasuno-1-190x266.jpg?t=1626011348"
+    },
+    "nodoka's": {
+      "full_name": "Nodoka's Mother",
+      "first_name": "Nodoka's",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/nodokas-mother-1-190x266.jpg?t=1626012035"
+    },
+    "rena": {
+      "full_name": "Rena KASHIBA",
+      "first_name": "Rena",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/rena-kashiba-1-190x265.jpg?t=1626011796"
+    },
+    "ryouko": {
+      "full_name": "Ryouko HANAWA",
+      "first_name": "Ryouko",
+      "description": "the woman with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ryouko-hanawa-1-190x267.jpg?t=1626012311"
+    },
+    "saki": {
+      "full_name": "Saki KAMISATO",
+      "first_name": "Saki",
+      "description": "The woman with long brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/saki-kamisato-1-190x267.jpg?t=1626011224"
+    },
+    "sakuta's": {
+      "full_name": "Sakuta's Father",
+      "first_name": "Sakuta's",
+      "description": "The man with short gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sakutas-father-1-190x266.jpg?t=1626012034"
+    },
+    "shoko": {
+      "full_name": "Shoko MAKINOHARA",
+      "first_name": "Shoko",
+      "description": "the woman with long blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shoko-makinohara-1-190x266.jpg?t=1626010518"
+    },
+    "uzuki": {
+      "full_name": "Uzuki HIROKAWA",
+      "first_name": "Uzuki",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/uzuki-hirokawa-1-190x266.jpg?t=1626012311"
+    },
+    "yosuke": {
+      "full_name": "Yosuke MAEZAWA",
+      "first_name": "Yosuke",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yosuke-maezawa-1-190x266.jpg?t=1626011796"
+    },
+    "yuuma": {
+      "full_name": "Yuuma KUNIMI",
+      "first_name": "Yuuma",
+      "description": "the man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yuuma-kunimi-1-190x266.jpg?t=1626011224"
+    }
+  },
+  "scooped_up_by_an_s_rank_adventurer": {
+    "cross": {
+      "full_name": "Cross",
+      "first_name": "Cross",
+      "description": "The person with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/cross-scooped-up-by-an-s-rank-adventurer-1-285x399.webp?t=1754156176"
+    },
+    "daggas": {
+      "full_name": "Daggas",
+      "first_name": "Daggas",
+      "description": "the man with pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/daggas-1-285x399.webp?t=1752341262"
+    },
+    "lloyd": {
+      "full_name": "Lloyd",
+      "first_name": "Lloyd",
+      "description": "the man with blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lloyd-yuusha-party-wo-tsuihou-sareta-hakuma-doushi-s-rank-boukensha-ni-hirowareru-1-285x399.webp?t=1752341640"
+    },
+    "silica": {
+      "full_name": "Silica",
+      "first_name": "Silica",
+      "description": "The woman with long blue hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/silica-scooped-up-by-an-s-rank-adventurer-1-285x399.webp?t=1752341444"
+    },
+    "yui": {
+      "full_name": "Yui",
+      "first_name": "Yui",
+      "description": "The woman with pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yui-scooped-up-by-an-s-rank-adventurer-1-285x399.webp?t=1752341665"
+    },
+    "claire": {
+      "full_name": "Claire",
+      "first_name": "Claire",
+      "description": "the woman with long white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/claire-scooped-up-by-an-s-rank-adventurer-1-285x399.webp?t=1755366872"
+    },
+    "grist": {
+      "full_name": "Grist",
+      "first_name": "Grist",
+      "description": "The man with white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/grist-1-285x399.webp?t=1757178048"
+    },
+    "merlin": {
+      "full_name": "Merlin",
+      "first_name": "Merlin",
+      "description": "The woman with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/merlin-scooped-up-by-an-s-rank-adventurer-1-285x398.webp?t=1751731900"
+    },
+    "michelle": {
+      "full_name": "Michelle",
+      "first_name": "Michelle",
+      "description": "The man with long purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/michelle-scooped-up-by-an-s-rank-adventurer-1-285x399.webp?t=1757177515"
+    },
+    "abel": {
+      "full_name": "Abel LUCAS",
+      "first_name": "Abel",
+      "description": "the person with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/abel-lucas-1-285x399.webp?t=1755367128"
+    },
+    "allen": {
+      "full_name": "Allen",
+      "first_name": "Allen",
+      "description": "The man with blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/allen-scooped-up-by-an-s-rank-adventurer-1-285x400.webp?t=1751731453"
+    },
+    "demon": {
+      "full_name": "Demon Lord",
+      "first_name": "Demon",
+      "description": "The blue flame in a spiked metal brazier",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/demon-lord-scooped-up-by-an-s-rank-adventurer-1-285x399.webp?t=1757177870"
+    },
+    "galland": {
+      "full_name": "Galland",
+      "first_name": "Galland",
+      "description": "The man with short blond hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/galland-scooped-up-by-an-s-rank-adventurer-1-285x399.webp?t=1755972100"
+    },
+    "guild": {
+      "full_name": "Guild Branch Manager",
+      "first_name": "Guild",
+      "description": "The elderly man with long white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/guild-branch-manager-1-285x399.webp?t=1754764152"
+    },
+    "klum": {
+      "full_name": "Klum",
+      "first_name": "Klum",
+      "description": "the woman with orange hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/klum-1-285x399.webp?t=1752341526"
+    },
+    "lily": {
+      "full_name": "Lily",
+      "first_name": "Lily",
+      "description": "the woman with long pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lily-scooped-up-by-an-s-rank-adventurer-1-285x399.webp?t=1755367069"
+    },
+    "lina": {
+      "full_name": "Lina",
+      "first_name": "Lina",
+      "description": "The woman with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lina-scooped-up-by-an-s-rank-adventurer-1-285x399.webp?t=1754763987"
+    },
+    "lowen": {
+      "full_name": "Lowen",
+      "first_name": "Lowen",
+      "description": "The woman with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lowen-1-285x399.webp?t=1757177791"
+    },
+    "lulu": {
+      "full_name": "Lulu",
+      "first_name": "Lulu",
+      "description": "The person with short purple hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lulu-scooped-up-by-an-s-rank-adventurer-1-285x399.webp?t=1755367179"
+    },
+    "lynn": {
+      "full_name": "Lynn",
+      "first_name": "Lynn",
+      "description": "The person with pink hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lynn-scooped-up-by-an-s-rank-adventurer-1-285x399.webp?t=1756581713"
+    },
+    "miiya": {
+      "full_name": "Miiya",
+      "first_name": "Miiya",
+      "description": "The woman with long red hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/miiya-1-285x399.webp?t=1755367207"
+    },
+    "ryouen": {
+      "full_name": "Ryouen",
+      "first_name": "Ryouen",
+      "description": "The woman with short blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ryouen-1-285x399.webp?t=1751731825"
+    },
+    "sheena": {
+      "full_name": "Sheena",
+      "first_name": "Sheena",
+      "description": "The woman with long white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sheena-scooped-up-by-an-s-rank-adventurer-1-285x399.webp?t=1755367217"
+    },
+    "silvie": {
+      "full_name": "Silvie",
+      "first_name": "Silvie",
+      "description": "The woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/silvie-scooped-up-by-an-s-rank-adventurer-1-285x399.webp?t=1752341596"
+    },
+    "therion": {
+      "full_name": "Therion",
+      "first_name": "Therion",
+      "description": "The man with long blue hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/therion-1-285x399.webp?t=1757176793"
+    },
+    "thor": {
+      "full_name": "Thor",
+      "first_name": "Thor",
+      "description": "The man with pink hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/thor-scooped-up-by-an-s-rank-adventurer-1-285x399.webp?t=1755366939"
+    },
+    "weapons": {
+      "full_name": "Weapons Dealer",
+      "first_name": "Weapons",
+      "description": "The elderly man with white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/weapons-dealer-1-285x399.webp?t=1755972016"
+    },
+    "will": {
+      "full_name": "Will",
+      "first_name": "Will",
+      "description": "The person with green hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/will-scooped-up-by-an-s-rank-adventurer-1-285x399.webp?t=1751731786"
+    }
+  },
+  "secrets_of_the_silent_witch": {
+    "monica": {
+      "full_name": "Monica EVERETT",
+      "first_name": "Monica",
+      "description": "the woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/monica-everett-1-285x399.webp?t=1753240793"
+    },
+    "casey": {
+      "full_name": "Casey GROVE",
+      "first_name": "Casey",
+      "description": "The woman with long brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/casey-grove-1-285x399.webp?t=1755829376"
+    },
+    "cyril": {
+      "full_name": "Cyril ASHLEY",
+      "first_name": "Cyril",
+      "description": "the person with long white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/cyril-ashley-1-285x399.webp?t=1753240833"
+    },
+    "felix": {
+      "full_name": "Felix ARC RIDILL",
+      "first_name": "Felix",
+      "description": "the man with blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/felix-arc-ridill-1-285x400.webp?t=1753240855"
+    },
+    "lana": {
+      "full_name": "Lana COLETTE",
+      "first_name": "Lana",
+      "description": "The woman with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lana-colette-1-285x399.webp?t=1755830681"
+    },
+    "nero": {
+      "full_name": "Nero",
+      "first_name": "Nero",
+      "description": "The small black cat creature",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/nero-secrets-of-the-silent-witch-light-novel-1-285x399.webp?t=1752763806"
+    },
+    "aaron": {
+      "full_name": "Aaron O'BRIEN",
+      "first_name": "Aaron",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/aaron-obrien-1-285x399.webp?t=1752763950"
+    },
+    "agatha": {
+      "full_name": "Agatha",
+      "first_name": "Agatha",
+      "description": "the woman with short brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/agatha-secrets-of-the-silent-witch-1-285x399.webp?t=1755829986"
+    },
+    "bridget": {
+      "full_name": "Bridget GREYHAM",
+      "first_name": "Bridget",
+      "description": "The woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/bridget-greyham-1-285x399.webp?t=1753240881"
+    },
+    "carole": {
+      "full_name": "Carole SIMMONS",
+      "first_name": "Carole",
+      "description": "The woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/carole-simmons-1-285x399.webp?t=1753240749"
+    },
+    "claudia": {
+      "full_name": "Claudia ASHLEY",
+      "first_name": "Claudia",
+      "description": "The woman with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/claudia-ashley-1-285x399.webp?t=1755829678"
+    },
+    "elliott": {
+      "full_name": "Elliott HOWARD",
+      "first_name": "Elliott",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/elliott-howard-1-285x399.webp?t=1752764059"
+    },
+    "glenn": {
+      "full_name": "Glenn DUDLEY",
+      "first_name": "Glenn",
+      "description": "The person with short light brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/glenn-dudley-1-285x399.webp?t=1755830029"
+    },
+    "isabelle": {
+      "full_name": "Isabelle NORTON",
+      "first_name": "Isabelle",
+      "description": "The woman with long orange hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/isabelle-norton-1-285x399.webp?t=1755830003"
+    },
+    "lindsay": {
+      "full_name": "Lindsay PAIL",
+      "first_name": "Lindsay",
+      "description": "The woman with blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lindsay-pail-1-285x399.webp?t=1755830553"
+    },
+    "louis": {
+      "full_name": "Louis MILLER",
+      "first_name": "Louis",
+      "description": "the person with long orange hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/louis-miller-1-285x399.webp?t=1751951443"
+    },
+    "mary": {
+      "full_name": "Mary HARVEY",
+      "first_name": "Mary",
+      "description": "The woman with long blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mary-harvey-1-285x399.webp?t=1756694669"
+    },
+    "maybell": {
+      "full_name": "Maybell HAYNES",
+      "first_name": "Maybell",
+      "description": "The woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/maybell-haynes-1-285x399.webp?t=1756089181"
+    },
+    "neil": {
+      "full_name": "Neil CLAY MAYWOOD",
+      "first_name": "Neil",
+      "description": "the person with short brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/neil-clay-maywood-1-285x399.webp?t=1755829776"
+    },
+    "rosalie": {
+      "full_name": "Rosalie MILLER",
+      "first_name": "Rosalie",
+      "description": "The woman with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/rosalie-miller-1-249x348.webp?t=1755833064"
+    },
+    "rynzbelfeid": {
+      "full_name": "Rynzbelfeid",
+      "first_name": "Rynzbelfeid",
+      "description": "The woman with blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/rynzbelfeid-1-285x399.webp?t=1751951496"
+    },
+    "selma": {
+      "full_name": "Selma KARSH",
+      "first_name": "Selma",
+      "description": "the woman with long light brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/selma-karsh-1-285x399.webp?t=1753240907"
+    },
+    "venedict": {
+      "full_name": "Venedict REYN",
+      "first_name": "Venedict",
+      "description": "The man with long light brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/venedict-reyn-1-285x399.webp?t=1753760871"
+    },
+    "victor": {
+      "full_name": "Victor THORNLEE",
+      "first_name": "Victor",
+      "description": "the man with short dark hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/victor-thornlee-1-285x399.webp?t=1752764007"
+    },
+    "wildianu": {
+      "full_name": "Wildianu",
+      "first_name": "Wildianu",
+      "description": "The man with white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/wildianu-1-285x399.webp?t=1753761635"
+    },
+    "william": {
+      "full_name": "William MACRAGAN",
+      "first_name": "William",
+      "description": "The elderly man with long white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/william-macragan-1-285x399.webp?t=1755829433"
+    }
+  },
+  "see_you_tomorrow_at_the_food_court": {
+    "wada": {
+      "full_name": "Wada",
+      "first_name": "Wada",
+      "description": "The woman with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/wada-see-you-tomorrow-at-the-food-court-1-285x399.webp?t=1751928854"
+    },
+    "yamamoto": {
+      "full_name": "Yamamoto",
+      "first_name": "Yamamoto",
+      "description": "The woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yamamoto-see-you-tomorrow-at-the-food-court-1-285x399.webp?t=1751928804"
+    },
+    "duke": {
+      "full_name": "Duke Of Abel",
+      "first_name": "Duke",
+      "description": "The person with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/duke-of-abel-1-285x399.webp?t=1752588271"
+    },
+    "saitou": {
+      "full_name": "Saitou",
+      "first_name": "Saitou",
+      "description": "The woman with light brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/saitou-see-you-tomorrow-at-the-food-court-1-285x399.webp?t=1754931131"
+    },
+    "bookstore": {
+      "full_name": "Bookstore Clerk",
+      "first_name": "Bookstore",
+      "description": "The woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/bookstore-clerk-see-you-tomorrow-at-the-food-court-1-236x330.webp?t=1754996363"
+    },
+    "child": {
+      "full_name": "Child",
+      "first_name": "Child",
+      "description": "the young boy with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/child-see-you-tomorrow-at-the-food-court-1-285x399.webp?t=1754995954"
+    },
+    "father": {
+      "full_name": "Father",
+      "first_name": "Father",
+      "description": "The man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/father-see-you-tomorrow-at-the-food-court-1-232x324.webp?t=1754996864"
+    },
+    "game": {
+      "full_name": "Game Center Clerk",
+      "first_name": "Game",
+      "description": "the woman with short brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/game-center-clerk-1-285x399.webp?t=1754995807"
+    },
+    "kintaro": {
+      "full_name": "Kintaro",
+      "first_name": "Kintaro",
+      "description": "The small mouse creature",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kintaro-see-you-tomorrow-at-the-food-court-1-285x399.webp?t=1754933209"
+    },
+    "mother": {
+      "full_name": "Mother",
+      "first_name": "Mother",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mother-see-you-tomorrow-at-the-food-court-1-285x399.webp?t=1754995893"
+    },
+    "naokin": {
+      "full_name": "Naokin",
+      "first_name": "Naokin",
+      "description": "the man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/naokin-1-285x399.webp?t=1754933994"
+    },
+    "randy": {
+      "full_name": "Randy",
+      "first_name": "Randy",
+      "description": "The man with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/randy-see-you-tomorrow-at-the-food-court-1-285x399.webp?t=1754932324"
+    },
+    "takizawa": {
+      "full_name": "Takizawa",
+      "first_name": "Takizawa",
+      "description": "The man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/takizawa-see-you-tomorrow-at-the-food-court-1-285x399.webp?t=1754931255"
+    },
+    "yamada": {
+      "full_name": "Yamada",
+      "first_name": "Yamada",
+      "description": "the woman with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yamada-see-you-tomorrow-at-the-food-court-1-285x399.webp?t=1754931320"
+    }
+  },
+  "summer_pockets": {
+    "hairi": {
+      "full_name": "Hairi TAKAHARA",
+      "first_name": "Hairi",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hairi-takahara-1-285x399.webp?t=1750888347"
+    },
+    "ao": {
+      "full_name": "Ao SORAKADO",
+      "first_name": "Ao",
+      "description": "the woman with long purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ao-sorakado-1-285x399.webp?t=1753588275"
+    },
+    "kamome": {
+      "full_name": "Kamome KUSHIMA",
+      "first_name": "Kamome",
+      "description": "The woman with long black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kamome-kushima-1-285x399.webp?t=1747607744"
+    },
+    "kyoko": {
+      "full_name": "Kyoko MISAKI",
+      "first_name": "Kyoko",
+      "description": "the woman with red hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kyoko-misaki-summer-pockets-1-285x399.webp?t=1752009099"
+    },
+    "miki": {
+      "full_name": "Miki NOMURA",
+      "first_name": "Miki",
+      "description": "The woman with short green hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/miki-nomura-1-285x399.webp?t=1750888300"
+    },
+    "ryouichi": {
+      "full_name": "Ryouichi MITANI",
+      "first_name": "Ryouichi",
+      "description": "the man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ryouichi-mitani-1-285x399.webp?t=1750888230"
+    },
+    "shiroha": {
+      "full_name": "Shiroha NARUSE",
+      "first_name": "Shiroha",
+      "description": "the woman with long white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shiroha-naruse-1-285x399.webp?t=1755966781"
+    },
+    "shizuku": {
+      "full_name": "Shizuku MIZUORI",
+      "first_name": "Shizuku",
+      "description": "The woman with purple hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shizuku-mizuori-1-285x398.webp?t=1750354887"
+    },
+    "tenzen": {
+      "full_name": "Tenzen KANO",
+      "first_name": "Tenzen",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/tenzen-kano-1-285x399.webp?t=1755959026"
+    },
+    "tsumugi": {
+      "full_name": "Tsumugi WENDERS",
+      "first_name": "Tsumugi",
+      "description": "The woman with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/tsumugi-wenders-1-285x399.webp?t=1750356556"
+    },
+    "umi": {
+      "full_name": "Umi KATOU",
+      "first_name": "Umi",
+      "description": "the woman with long purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/umi-katou-1-285x399.webp?t=1749240043"
+    },
+    "ai": {
+      "full_name": "Ai SORAKADO",
+      "first_name": "Ai",
+      "description": "The woman with long purple hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ai-sorakado-1-285x399.webp?t=1753462505"
+    },
+    "ao's": {
+      "full_name": "Ao's Father",
+      "first_name": "Ao's",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/aos-father-1-285x399.webp?t=1753460725"
+    },
+    "doctor": {
+      "full_name": "Doctor",
+      "first_name": "Doctor",
+      "description": "The man with short gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/doctor-summer-pockets-1-285x399.webp?t=1753461078"
+    },
+    "hayato": {
+      "full_name": "Hayato",
+      "first_name": "Hayato",
+      "description": "The young boy with short brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hayato-summer-pockets-1-285x399.webp?t=1747607519"
+    },
+    "hotta": {
+      "full_name": "Hotta",
+      "first_name": "Hotta",
+      "description": "The young girl with long black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hotta-summer-pockets-1-285x399.webp?t=1755961466"
+    },
+    "inari": {
+      "full_name": "Inari",
+      "first_name": "Inari",
+      "description": "The small blue creature with large ears.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/inari-summer-pockets-1-285x399.webp?t=1752009479"
+    },
+    "kamome's": {
+      "full_name": "Kamome's Father",
+      "first_name": "Kamome's",
+      "description": "The man with short brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kamomes-father-1-285x399.webp?t=1749238959"
+    },
+    "katou": {
+      "full_name": "Katou",
+      "first_name": "Katou",
+      "description": "The elderly woman with white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/katou-summer-pockets-1-285x399.webp?t=1750357258"
+    },
+    "kido": {
+      "full_name": "Kido",
+      "first_name": "Kido",
+      "description": "The elderly woman with white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kido-summer-pockets-1-285x399.webp?t=1747077615"
+    },
+    "kobato": {
+      "full_name": "Kobato NARUSE",
+      "first_name": "Kobato",
+      "description": "The elderly man with white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kobato-naruse-1-285x399.webp?t=1755960307"
+    },
+    "lighthouse": {
+      "full_name": "Lighthouse Keeper",
+      "first_name": "Lighthouse",
+      "description": "The person with short dark hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lighthouse-keeper-summer-pockets-1-285x399.webp?t=1753460351"
+    },
+    "marin": {
+      "full_name": "Marin Diner Cook",
+      "first_name": "Marin",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/marin-diner-cook-1-285x399.webp?t=1747605980"
+    },
+    "sagi": {
+      "full_name": "Sagi KUSHIMA",
+      "first_name": "Sagi",
+      "description": "the woman with purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sagi-kushima-1-285x399.webp?t=1749238785"
+    },
+    "snack": {
+      "full_name": "Snack Shop Owner",
+      "first_name": "Snack",
+      "description": "The elderly woman with gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/snack-shop-owner-1-285x399.webp?t=1747077745"
+    },
+    "suzume": {
+      "full_name": "Suzume",
+      "first_name": "Suzume",
+      "description": "The young girl with long brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/suzume-summer-pockets-1-285x398.webp?t=1747607578"
+    },
+    "tokuda": {
+      "full_name": "Tokuda",
+      "first_name": "Tokuda",
+      "description": "the person with blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/tokuda-summer-pockets-1-285x399.webp?t=1755959467"
+    },
+    "tsubame": {
+      "full_name": "Tsubame",
+      "first_name": "Tsubame",
+      "description": "The woman with long purple hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/tsubame-summer-pockets-1-285x399.webp?t=1747607384"
+    },
+    "tsumugi's": {
+      "full_name": "Tsumugi's Father",
+      "first_name": "Tsumugi's",
+      "description": "The man with blond hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/tsumugis-father-1-285x399.webp?t=1750357875"
+    }
+  },
+  "the_apothecary_diaries": {
+    "jinshi": {
+      "full_name": "Jinshi",
+      "first_name": "Jinshi",
+      "description": "The person with long purple hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/jinshi-1-285x399.webp?t=1697939853"
+    },
+    "maomao": {
+      "full_name": "Maomao",
+      "first_name": "Maomao",
+      "description": "the person with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/maomao-1-285x399.webp?t=1753333054"
+    },
+    "gao": {
+      "full_name": "Gao Shun",
+      "first_name": "Gao",
+      "description": "The man with long black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/gao-shun-1-285x399.webp?t=1700718941"
+    },
+    "gyokuyo": {
+      "full_name": "Gyokuyo",
+      "first_name": "Gyokuyo",
+      "description": "the woman with long pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/gyokuyo-1-285x399.webp?t=1700718987"
+    },
+    "lakan": {
+      "full_name": "Lakan KAN",
+      "first_name": "Lakan",
+      "description": "The man with long black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lakan-kan-1-285x399.webp?t=1753384561"
+    },
+    "suiren": {
+      "full_name": "Suiren",
+      "first_name": "Suiren",
+      "description": "The elderly woman with white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/suiren-the-apothecary-diaries-1-285x399.webp?t=1706412758"
+    },
+    "xiaolan": {
+      "full_name": "Xiaolan",
+      "first_name": "Xiaolan",
+      "description": "the young boy with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/xiaolan-1-285x399.webp?t=1697940219"
+    },
+    "aduo": {
+      "full_name": "Aduo",
+      "first_name": "Aduo",
+      "description": "The woman with long purple hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/aduo-1-285x399.webp?t=1703559828"
+    },
+    "ailan": {
+      "full_name": "Ailan",
+      "first_name": "Ailan",
+      "description": "The woman with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ailan-1-285x399.webp?t=1700721216"
+    },
+    "anshi": {
+      "full_name": "Anshi",
+      "first_name": "Anshi",
+      "description": "The woman with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/anshi-1-285x399.webp?t=1753384179"
+    },
+    "basen": {
+      "full_name": "Basen",
+      "first_name": "Basen",
+      "description": "The man with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/basen-1-285x399.webp?t=1753332648"
+    },
+    "chang": {
+      "full_name": "Chang",
+      "first_name": "Chang",
+      "description": "The man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/chang-the-apothecary-diaries-1-285x399.webp?t=1753332728"
+    },
+    "doctor": {
+      "full_name": "Doctor",
+      "first_name": "Doctor",
+      "description": "The elderly man with dark hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/doctor-kusuriya-no-hitorigoto-1-285x399.webp?t=1700721104"
+    },
+    "emperor": {
+      "full_name": "Emperor",
+      "first_name": "Emperor",
+      "description": "The man with dark hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/emperor-kusuriya-no-hitorigoto-1-285x399.webp?t=1706412728"
+    },
+    "fengming": {
+      "full_name": "Fengming",
+      "first_name": "Fengming",
+      "description": "The woman with dark hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/fengming-1-285x399.webp?t=1703559810"
+    },
+    "fengxian": {
+      "full_name": "Fengxian",
+      "first_name": "Fengxian",
+      "description": "The woman with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/fengxian-the-apothecary-diaries-1-190x267.jpg?t=1672436622"
+    },
+    "fuyo": {
+      "full_name": "Fuyo",
+      "first_name": "Fuyo",
+      "description": "The woman with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/fuyo-the-apothecary-diaries-1-285x399.webp?t=1697950133"
+    },
+    "granny": {
+      "full_name": "Granny",
+      "first_name": "Granny",
+      "description": "The elderly woman with white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/granny-kusuriya-no-hitorigoto-1-285x399.webp?t=1697940134"
+    },
+    "guiyuan": {
+      "full_name": "Guiyuan",
+      "first_name": "Guiyuan",
+      "description": "the woman with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/guiyuan-1-285x399.webp?t=1697943971"
+    },
+    "hongniang": {
+      "full_name": "Hongniang",
+      "first_name": "Hongniang",
+      "description": "the woman with dark hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hongniang-1-285x399.webp?t=1697944055"
+    },
+    "joka": {
+      "full_name": "Joka",
+      "first_name": "Joka",
+      "description": "The woman with long dark blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/joka-the-apothecary-diaries-1-285x399.webp?t=1703558957"
+    },
+    "kamuro": {
+      "full_name": "Kamuro",
+      "first_name": "Kamuro",
+      "description": "the young girl with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kamuro-the-apothecary-diaries-1-285x399.webp?t=1702932394"
+    },
+    "kanan": {
+      "full_name": "Kanan",
+      "first_name": "Kanan",
+      "description": "The woman with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kanan-the-apothecary-diaries-1-285x399.webp?t=1700720472"
+    },
+    "kounen": {
+      "full_name": "Kounen",
+      "first_name": "Kounen",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kounen-1-285x399.webp?t=1706412529"
+    },
+    "lihaku": {
+      "full_name": "Lihaku",
+      "first_name": "Lihaku",
+      "description": "The man with short black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lihaku-1-285x399.webp?t=1753384585"
+    },
+    "lihua": {
+      "full_name": "Lihua",
+      "first_name": "Lihua",
+      "description": "The woman with long dark blue hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lihua-1-285x399.webp?t=1700085013"
+    },
+    "lingri": {
+      "full_name": "Lingri",
+      "first_name": "Lingri",
+      "description": "the young girl with pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lingri-1-285x399.webp?t=1747419495"
+    },
+    "lishu": {
+      "full_name": "Lishu",
+      "first_name": "Lishu",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lishu-1-285x399.webp?t=1700085257"
+    },
+    "loulan": {
+      "full_name": "Loulan",
+      "first_name": "Loulan",
+      "description": "The woman with long black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/loulan-1-285x399.webp?t=1754021375"
+    },
+    "luomen": {
+      "full_name": "Luomen",
+      "first_name": "Luomen",
+      "description": "the elderly man with long white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/luomen-1-285x399.webp?t=1697949570"
+    },
+    "meimei": {
+      "full_name": "MeiMei",
+      "first_name": "MeiMei",
+      "description": "The woman with long purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/meimei-the-apothecary-diaries-1-285x400.webp?t=1703558917"
+    },
+    "narrator": {
+      "full_name": "Narrator",
+      "first_name": "Narrator",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "pailing": {
+      "full_name": "Pailing",
+      "first_name": "Pailing",
+      "description": "The woman with long purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/pailing-1-285x399.webp?t=1697940024"
+    },
+    "shisho": {
+      "full_name": "Shisho",
+      "first_name": "Shisho",
+      "description": "The elderly man with gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shisho-the-apothecary-diaries-1-285x399.webp?t=1754021398"
+    },
+    "suirei": {
+      "full_name": "Suirei",
+      "first_name": "Suirei",
+      "description": "the woman with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/suirei-1-285x399.webp?t=1706413018"
+    },
+    "tzu": {
+      "full_name": "Tzu",
+      "first_name": "Tzu",
+      "description": "The elderly man with gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/tzu-1-285x399.webp?t=1753332664"
+    },
+    "xing": {
+      "full_name": "Xing",
+      "first_name": "Xing",
+      "description": "the woman with dark hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/xing-the-apothecary-diaries-1-285x399.webp?t=1702931693"
+    },
+    "yinghua": {
+      "full_name": "Yinghua",
+      "first_name": "Yinghua",
+      "description": "The woman with long purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yinghua-1-285x399.webp?t=1697944011"
+    }
+  },
+  "the_brilliant_healers_new_life_in_the_shadows": {
+    "zenos": {
+      "full_name": "Zenos",
+      "first_name": "Zenos",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/zenos-1-285x399.webp?t=1750887214"
+    },
+    "carmilla": {
+      "full_name": "Carmilla",
+      "first_name": "Carmilla",
+      "description": "The woman with long black and teal hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/carmilla-the-brilliant-healers-new-life-in-the-shadows-1-285x399.webp?t=1747946070"
+    },
+    "cresson": {
+      "full_name": "Cresson WEMBLEY",
+      "first_name": "Cresson",
+      "description": "The man with orange hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/cresson-wembley-1-285x399.webp?t=1749590676"
+    },
+    "ernardo": {
+      "full_name": "Ernardo BECKER",
+      "first_name": "Ernardo",
+      "description": "The man with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ernardo-becker-1-285x399.webp?t=1750886904"
+    },
+    "goldran": {
+      "full_name": "Goldran",
+      "first_name": "Goldran",
+      "description": "The man with gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/goldran-1-285x399.webp?t=1750884175"
+    },
+    "krishna": {
+      "full_name": "Krishna",
+      "first_name": "Krishna",
+      "description": "The woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/krishna-the-brilliant-healers-new-life-in-the-shadows-1-285x399.webp?t=1747945810"
+    },
+    "lily": {
+      "full_name": "Lily",
+      "first_name": "Lily",
+      "description": "the woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lily-the-brilliant-healers-new-life-in-the-shadows-light-novel-1-285x399.webp?t=1747694456"
+    },
+    "loewe": {
+      "full_name": "Loewe",
+      "first_name": "Loewe",
+      "description": "The woman with long purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/loewe-1-285x399.webp?t=1747867618"
+    },
+    "lynga": {
+      "full_name": "Lynga",
+      "first_name": "Lynga",
+      "description": "The woman with short gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lynga-1-285x399.webp?t=1747695483"
+    },
+    "umin": {
+      "full_name": "Umin",
+      "first_name": "Umin",
+      "description": "the woman with long blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/umin-the-brilliant-healers-new-life-in-the-shadows-1-285x399.webp?t=1748303926"
+    },
+    "zophia": {
+      "full_name": "Zophia",
+      "first_name": "Zophia",
+      "description": "The woman with long brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/zophia-the-brilliant-healers-new-life-in-the-shadows-1-285x399.webp?t=1747867664"
+    },
+    "adventurer-adjacent": {
+      "full_name": "Adventurer-Adjacent Healing Teacher",
+      "first_name": "Adventurer-Adjacent",
+      "description": "the man with dark hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/adventurer-adjacent-healing-teacher-1-285x399.webp?t=1749588386"
+    },
+    "afread": {
+      "full_name": "Afread",
+      "first_name": "Afread",
+      "description": "The man with blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/afread-1-285x399.webp?t=1749587475"
+    },
+    "andes": {
+      "full_name": "Andes",
+      "first_name": "Andes",
+      "description": "The person with long black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/andes-1-285x399.webp?t=1747692521"
+    },
+    "aston": {
+      "full_name": "Aston BOEHRINGAL",
+      "first_name": "Aston",
+      "description": "The man with red hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/aston-boehringal-1-285x399.webp?t=1747949115"
+    },
+    "bons": {
+      "full_name": "Bons",
+      "first_name": "Bons",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/bons-1-285x399.webp?t=1749591849"
+    },
+    "calendor": {
+      "full_name": "Calendor",
+      "first_name": "Calendor",
+      "description": "The man with gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/calendor-1-285x399.webp?t=1747946678"
+    },
+    "charlotte": {
+      "full_name": "Charlotte FENNEL",
+      "first_name": "Charlotte",
+      "description": "the woman with long pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/charlotte-fennel-1-285x399.webp?t=1750884976"
+    },
+    "division": {
+      "full_name": "Division Commander",
+      "first_name": "Division",
+      "description": "the man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/division-commander-1-285x399.webp?t=1747868045"
+    },
+    "ernardo's": {
+      "full_name": "Ernardo's Fiance\u00e9",
+      "first_name": "Ernardo's",
+      "description": "the woman with short brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ernardos-fiance-1-285x399.webp?t=1750887100"
+    },
+    "fennel": {
+      "full_name": "Fennel",
+      "first_name": "Fennel",
+      "description": "The man with long purple hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/fennel-the-brilliant-healers-new-life-in-the-shadows-1-285x399.webp?t=1750884286"
+    },
+    "fennel's": {
+      "full_name": "Fennel's Butler",
+      "first_name": "Fennel's",
+      "description": "The man with long gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/fennels-butler-1-285x399.webp?t=1747948754"
+    },
+    "forbes": {
+      "full_name": "Forbes",
+      "first_name": "Forbes",
+      "description": "The man with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/forbes-1-285x399.webp?t=1747685821"
+    },
+    "goldran's": {
+      "full_name": "Goldran's Second Secretary",
+      "first_name": "Goldran's",
+      "description": "The man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/goldrans-second-secretary-1-285x399.webp?t=1749590744"
+    },
+    "guile": {
+      "full_name": "Guile",
+      "first_name": "Guile",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/guile-the-brilliant-healers-new-life-in-the-shadows-1-285x399.webp?t=1747949136"
+    },
+    "healing": {
+      "full_name": "Healing Magic Circle Teacher",
+      "first_name": "Healing",
+      "description": "the man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/healing-magic-circle-teacher-1-285x399.webp?t=1749588672"
+    },
+    "krishna's": {
+      "full_name": "Krishna's Mother",
+      "first_name": "Krishna's",
+      "description": "the woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/krishnas-mother-1-285x399.webp?t=1747945909"
+    },
+    "madam": {
+      "full_name": "Madam Milk",
+      "first_name": "Madam",
+      "description": "The small white dog-like creature",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/madam-milk-1-285x399.webp?t=1748558415"
+    },
+    "the": {
+      "full_name": "The Guide",
+      "first_name": "The",
+      "description": "The person with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/the-guide-the-brilliant-healers-new-life-in-the-shadows-1-285x398.webp?t=1748301106"
+    },
+    "til": {
+      "full_name": "Til",
+      "first_name": "Til",
+      "description": "The person with short pink hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/til-the-brilliant-healers-new-life-in-the-shadows-1-285x399.webp?t=1747686115"
+    },
+    "veritra": {
+      "full_name": "Veritra",
+      "first_name": "Veritra",
+      "description": "The person with short blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/veritra-1-285x399.webp?t=1747951697"
+    },
+    "yuma": {
+      "full_name": "Yuma",
+      "first_name": "Yuma",
+      "description": "The person with long black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yuma-the-brilliant-healers-new-life-in-the-shadows-1-285x400.webp?t=1747692834"
+    },
+    "zenos'": {
+      "full_name": "Zenos' Master",
+      "first_name": "Zenos'",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/zenos-master-1-285x399.webp?t=1749587852"
+    },
+    "zonde": {
+      "full_name": "Zonde",
+      "first_name": "Zonde",
+      "description": "The man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/zonde-1-285x399.webp?t=1747694860"
+    }
+  },
+  "the_shiunji_family_children": {
+    "arata": {
+      "full_name": "Arata SHIUNJI",
+      "first_name": "Arata",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/arata-shiunji-1-285x399.webp?t=1744756296"
+    },
+    "banri": {
+      "full_name": "Banri SHIUNJI",
+      "first_name": "Banri",
+      "description": "The woman with short orange hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/banri-shiunji-1-285x399.webp?t=1748395814"
+    },
+    "kotono": {
+      "full_name": "Kotono SHIUNJI",
+      "first_name": "Kotono",
+      "description": "The woman with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kotono-shiunji-1-285x399.webp?t=1744756357"
+    },
+    "minami": {
+      "full_name": "Minami SHIUNJI",
+      "first_name": "Minami",
+      "description": "The person with green hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/minami-shiunji-1-285x399.webp?t=1747782348"
+    },
+    "ouka": {
+      "full_name": "Ouka SHIUNJI",
+      "first_name": "Ouka",
+      "description": "The woman with long pink hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ouka-shiunji-1-285x399.webp?t=1750810436"
+    },
+    "seiha": {
+      "full_name": "Seiha SHIUNJI",
+      "first_name": "Seiha",
+      "description": "The woman with long blue hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/seiha-shiunji-1-285x399.webp?t=1745689277"
+    },
+    "shion": {
+      "full_name": "Shion SHIUNJI",
+      "first_name": "Shion",
+      "description": "the person with short white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shion-shiunji-1-285x399.webp?t=1747174872"
+    },
+    "kaname": {
+      "full_name": "Kaname SHIUNJI",
+      "first_name": "Kaname",
+      "description": "The elderly man with gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kaname-shiunji-1-285x399.webp?t=1744158357"
+    },
+    "actor": {
+      "full_name": "Actor On Suspension Bridge",
+      "first_name": "Actor",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/actor-on-suspension-bridge-1-285x399.webp?t=1746573428"
+    },
+    "chair": {
+      "full_name": "Chair Umpire",
+      "first_name": "Chair",
+      "description": "The woman with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/chair-umpire-1-285x399.webp?t=1747783660"
+    },
+    "innkeeper": {
+      "full_name": "Innkeeper",
+      "first_name": "Innkeeper",
+      "description": "The elderly woman with short brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/innkeeper-the-shiunji-family-children-1-285x399.webp?t=1748993140"
+    },
+    "lala": {
+      "full_name": "Lala YOKOHAMA",
+      "first_name": "Lala",
+      "description": "The woman with long black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lala-yokohama-1-285x399.webp?t=1745689151"
+    },
+    "nao": {
+      "full_name": "Nao HINATA",
+      "first_name": "Nao",
+      "description": "the woman with short blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/nao-hinata-1-285x399.webp?t=1747783038"
+    },
+    "narrator": {
+      "full_name": "Narrator",
+      "first_name": "Narrator",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "ouka's": {
+      "full_name": "Ouka's Teacher",
+      "first_name": "Ouka's",
+      "description": "The person with short black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/oukas-teacher-1-61x85.webp?t=1748396985"
+    },
+    "phone": {
+      "full_name": "Phone Salesperson",
+      "first_name": "Phone",
+      "description": "the woman with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/phone-salesperson-1-269x376.webp?t=1746054425"
+    },
+    "takkun": {
+      "full_name": "Takkun",
+      "first_name": "Takkun",
+      "description": "The person with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/takkun-the-shiunji-family-children-1-285x399.webp?t=1744159649"
+    },
+    "tennis": {
+      "full_name": "Tennis Coach",
+      "first_name": "Tennis",
+      "description": "The man with short black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/tennis-coach-the-shiunji-family-children-1-285x399.webp?t=1747782986"
+    },
+    "velzekyll": {
+      "full_name": "Velzekyll",
+      "first_name": "Velzekyll",
+      "description": "The black and brown dog with a red bow tie.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/velzekyll-1-285x399.webp?t=1746572611"
+    },
+    "with-me": {
+      "full_name": "With-Me Sea Employee",
+      "first_name": "With-Me",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/with-me-sea-employee-1-215x301.webp?t=1745690392"
+    },
+    "yamaguchi": {
+      "full_name": "Yamaguchi",
+      "first_name": "Yamaguchi",
+      "description": "the woman with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yamaguchi-the-shiunji-family-children-1-285x400.webp?t=1744158841"
+    }
+  },
+  "the_unaware_atelier_meister": {
+    "kurt": {
+      "full_name": "Kurt ROCKHANS",
+      "first_name": "Kurt",
+      "description": "The person with white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kurt-rockhans-1-285x399.webp?t=1743353549"
+    },
+    "yurishia": {
+      "full_name": "Yurishia",
+      "first_name": "Yurishia",
+      "description": "The woman with long white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yurishia-1-285x399.webp?t=1743954139"
+    },
+    "akuri": {
+      "full_name": "Akuri",
+      "first_name": "Akuri",
+      "description": "the young girl with long blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/akuri-1-285x399.webp?t=1750002280"
+    },
+    "bandana": {
+      "full_name": "Bandana",
+      "first_name": "Bandana",
+      "description": "the woman with short black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/bandana-1-285x399.webp?t=1743954157"
+    },
+    "danzo": {
+      "full_name": "Danzo",
+      "first_name": "Danzo",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/danzo-the-unaware-atelier-meister-1-285x399.webp?t=1744560764"
+    },
+    "kans": {
+      "full_name": "Kans",
+      "first_name": "Kans",
+      "description": "The man with short blond hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kans-1-285x399.webp?t=1744560659"
+    },
+    "liselotte": {
+      "full_name": "Liselotte HOMERUS",
+      "first_name": "Liselotte",
+      "description": "the woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/liselotte-homerus-1-285x399.webp?t=1745169344"
+    },
+    "mimiko": {
+      "full_name": "Mimiko",
+      "first_name": "Mimiko",
+      "description": "the woman with long purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mimiko-kanchigai-no-atelier-master-1-285x399.webp?t=1744560551"
+    },
+    "sina": {
+      "full_name": "Sina",
+      "first_name": "Sina",
+      "description": "The woman with long orange hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sina-the-unaware-atelier-meister-1-285x399.webp?t=1744560861"
+    },
+    "tanga": {
+      "full_name": "Tanga Kokolukka TAICONE",
+      "first_name": "Tanga",
+      "description": "The man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/tanga-kokolukka-taicone-1-285x399.webp?t=1748793796"
+    },
+    "alraid": {
+      "full_name": "Alraid CUCUSOE",
+      "first_name": "Alraid",
+      "description": "The man with short blond hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/alraid-cucusoe-1-285x399.webp?t=1746373894"
+    },
+    "bibinokke": {
+      "full_name": "Bibinokke",
+      "first_name": "Bibinokke",
+      "description": "The bald man.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/bibinokke-1-285x399.webp?t=1745169483"
+    },
+    "demon": {
+      "full_name": "Demon Lord",
+      "first_name": "Demon",
+      "description": "The person with long white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/demon-lord-the-unaware-atelier-meister-1-285x399.webp?t=1750002252"
+    },
+    "dragon": {
+      "full_name": "Dragon",
+      "first_name": "Dragon",
+      "description": "the blue dragon creature",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/dragon-the-unaware-atelier-meister-1-285x399.webp?t=1747585575"
+    },
+    "dwarf": {
+      "full_name": "Dwarf",
+      "first_name": "Dwarf",
+      "description": "the man with short blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/dwarf-the-unaware-atelier-meister-1-285x399.webp?t=1748793717"
+    },
+    "famil": {
+      "full_name": "Famil",
+      "first_name": "Famil",
+      "description": "The elderly woman with long white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/famil-1-285x399.webp?t=1749399814"
+    },
+    "gargel": {
+      "full_name": "Gargel",
+      "first_name": "Gargel",
+      "description": "The bald man.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/gargel-1-285x399.webp?t=1748793908"
+    },
+    "generic": {
+      "full_name": "Generic",
+      "first_name": "Generic",
+      "description": "The man with spiky gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/generic-1-285x399.webp?t=1745768771"
+    },
+    "golnova": {
+      "full_name": "Golnova",
+      "first_name": "Golnova",
+      "description": "The man with red hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/golnova-1-285x399.webp?t=1743353092"
+    },
+    "hildegard": {
+      "full_name": "Hildegard",
+      "first_name": "Hildegard",
+      "description": "The woman with long purple hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hildegard-the-unaware-atelier-meister-1-285x399.webp?t=1746982804"
+    },
+    "isadora": {
+      "full_name": "Isadora ARKMAMA",
+      "first_name": "Isadora",
+      "description": "The person with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/isadora-arkmama-1-285x399.webp?t=1744632967"
+    },
+    "kirshell": {
+      "full_name": "Kirshell",
+      "first_name": "Kirshell",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kirshell-1-285x399.webp?t=1743353277"
+    },
+    "luna": {
+      "full_name": "Luna",
+      "first_name": "Luna",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/luna-the-unaware-atelier-meister-1-285x399.webp?t=1748794003"
+    },
+    "luna's": {
+      "full_name": "Luna's Father",
+      "first_name": "Luna's",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/lunas-father-the-unaware-atelier-meister-1-285x399.webp?t=1748794158"
+    },
+    "marlefiss": {
+      "full_name": "Marlefiss",
+      "first_name": "Marlefiss",
+      "description": "the woman with long blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/marlefiss-1-285x399.webp?t=1745768473"
+    },
+    "michelle": {
+      "full_name": "Michelle LALACOTTA",
+      "first_name": "Michelle",
+      "description": "the woman with short orange hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/michelle-lalacotta-1-285x399.webp?t=1743957696"
+    },
+    "ophelia": {
+      "full_name": "Ophelia",
+      "first_name": "Ophelia",
+      "description": "the woman with long blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ophelia-kanchigai-no-atelier-master-1-285x399.webp?t=1743954279"
+    },
+    "phantom": {
+      "full_name": "Phantom",
+      "first_name": "Phantom",
+      "description": "The person with green hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/phantom-the-unaware-atelier-meister-1-285x399.webp?t=1748794079"
+    },
+    "pig": {
+      "full_name": "Pig Farm Client",
+      "first_name": "Pig",
+      "description": "The woman with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/pig-farm-client-1-285x399.webp?t=1747585696"
+    },
+    "rikuto": {
+      "full_name": "Rikuto",
+      "first_name": "Rikuto",
+      "description": "the person with long white hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/rikuto-the-unaware-atelier-meister-1-285x399.webp?t=1750002168"
+    },
+    "sannova": {
+      "full_name": "Sannova RISTKATZ",
+      "first_name": "Sannova",
+      "description": "The person in armor with long dark hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sannova-ristkatz-1-285x399.webp?t=1744632879"
+    },
+    "scripter": {
+      "full_name": "Scripter",
+      "first_name": "Scripter",
+      "description": "The person with long black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/scripter-the-unaware-atelier-meister-1-285x399.webp?t=1750002387"
+    },
+    "solflare": {
+      "full_name": "Solflare",
+      "first_name": "Solflare",
+      "description": "The person with short white hair and horns.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/solflare-1-285x399.webp?t=1748190531"
+    },
+    "tristan": {
+      "full_name": "Tristan MEYNOLF",
+      "first_name": "Tristan",
+      "description": "The man with short gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/tristan-meynolf-1-285x399.webp?t=1745768493"
+    }
+  },
+  "wind_breaker": {
+    "haruka": {
+      "full_name": "Haruka SAKURA",
+      "first_name": "Haruka",
+      "description": "The man with black and white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/haruka-sakura-1-285x399.webp?t=1720928548"
+    },
+    "akihiko": {
+      "full_name": "Akihiko NIREI",
+      "first_name": "Akihiko",
+      "description": "the man with yellow hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/akihiko-nirei-1-285x399.webp?t=1719703801"
+    },
+    "choji": {
+      "full_name": "Choji TOMIYAMA",
+      "first_name": "Choji",
+      "description": "The person with short blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/choji-tomiyama-1-285x399.webp?t=1714081441"
+    },
+    "hajime": {
+      "full_name": "Hajime UMEMIYA",
+      "first_name": "Hajime",
+      "description": "The man with white hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hajime-umemiya-1-285x399.webp?t=1714083391"
+    },
+    "hayato": {
+      "full_name": "Hayato SUO",
+      "first_name": "Hayato",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hayato-suo-1-285x399.webp?t=1719703591"
+    },
+    "jo": {
+      "full_name": "Jo TOGAME",
+      "first_name": "Jo",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/jo-togame-1-285x399.webp?t=1720928411"
+    },
+    "kotoha": {
+      "full_name": "Kotoha TACHIBANA",
+      "first_name": "Kotoha",
+      "description": "the person with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kotoha-tachibana-1-285x399.webp?t=1712614798"
+    },
+    "kyotaro": {
+      "full_name": "Kyotaro SUGISHITA",
+      "first_name": "Kyotaro",
+      "description": "The man with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kyotaro-sugishita-1-285x399.webp?t=1714077271"
+    },
+    "toma": {
+      "full_name": "Toma HIRAGI",
+      "first_name": "Toma",
+      "description": "The man with short blond hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/toma-hiragi-1-285x399.webp?t=1744934421"
+    },
+    "atsushi": {
+      "full_name": "Atsushi NAGATO",
+      "first_name": "Atsushi",
+      "description": "the man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/atsushi-nagato-1-285x399.webp?t=1745786156"
+    },
+    "chiyoko": {
+      "full_name": "Chiyoko SATO",
+      "first_name": "Chiyoko",
+      "description": "The elderly woman with gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/chiyoko-sato-1-285x399.webp?t=1719103334"
+    },
+    "hiroki": {
+      "full_name": "Hiroki SARUWATARI",
+      "first_name": "Hiroki",
+      "description": "the man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/hiroki-saruwatari-1-285x399.webp?t=1720942273"
+    },
+    "jien": {
+      "full_name": "Jien YANAGIDA",
+      "first_name": "Jien",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/jien-yanagida-1-285x399.webp?t=1722406763"
+    },
+    "junpei": {
+      "full_name": "Junpei KURITA",
+      "first_name": "Junpei",
+      "description": "The man with short black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/junpei-kurita-1-285x399.webp?t=1746321071"
+    },
+    "kota": {
+      "full_name": "Kota SAKO",
+      "first_name": "Kota",
+      "description": "The person with short blonde hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kota-sako-1-285x399.webp?t=1716517286"
+    },
+    "masaki": {
+      "full_name": "Masaki ANZAI",
+      "first_name": "Masaki",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/masaki-anzai-1-285x399.webp?t=1718329727"
+    },
+    "minoru": {
+      "full_name": "Minoru KANUMA",
+      "first_name": "Minoru",
+      "description": "The person with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/minoru-kanuma-1-285x399.webp?t=1713598059"
+    },
+    "mio": {
+      "full_name": "Mio TSUCHIYA",
+      "first_name": "Mio",
+      "description": "The woman with short brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mio-tsuchiya-1-285x399.webp?t=1720942150"
+    },
+    "mitsuki": {
+      "full_name": "Mitsuki KIRYU",
+      "first_name": "Mitsuki",
+      "description": "the man with long pink hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mitsuki-kiryu-1-285x399.webp?t=1718329860"
+    },
+    "ren": {
+      "full_name": "Ren KAJI",
+      "first_name": "Ren",
+      "description": "The man with blond hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/ren-kaji-1-285x399.webp?t=1719103453"
+    },
+    "risa": {
+      "full_name": "Risa",
+      "first_name": "Risa",
+      "description": "The white cat with a red bow.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/risa-wind-breaker-1-285x399.webp?t=1719103737"
+    },
+    "risa's": {
+      "full_name": "Risa's Owner",
+      "first_name": "Risa's",
+      "description": "The elderly woman with short gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/risas-owner-1-285x399.webp?t=1719698730"
+    },
+    "saku": {
+      "full_name": "Saku MIZUKI",
+      "first_name": "Saku",
+      "description": "the man with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/saku-mizuki-1-285x399.webp?t=1751168621"
+    },
+    "sasaki": {
+      "full_name": "Sasaki",
+      "first_name": "Sasaki",
+      "description": "the man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/sasaki-wind-breaker-satoru-nii-1-285x399.webp?t=1714077157"
+    },
+    "seiryu": {
+      "full_name": "Seiryu SAKAKI",
+      "first_name": "Seiryu",
+      "description": "the man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/seiryu-sakaki-1-285x399.webp?t=1746320930"
+    },
+    "shingo": {
+      "full_name": "Shingo NATORI",
+      "first_name": "Shingo",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shingo-natori-1-285x399.webp?t=1744582461"
+    },
+    "taiga": {
+      "full_name": "Taiga TSUGEURA",
+      "first_name": "Taiga",
+      "description": "The man with orange hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/taiga-tsugeura-1-285x399.webp?t=1718330071"
+    },
+    "takeshi": {
+      "full_name": "Takeshi ENOMOTO",
+      "first_name": "Takeshi",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/takeshi-enomoto-1-285x399.webp?t=1719103519"
+    },
+    "takumi": {
+      "full_name": "Takumi MOMOSE",
+      "first_name": "Takumi",
+      "description": "The person with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/takumi-momose-1-285x398.webp?t=1751168672"
+    },
+    "tasuku": {
+      "full_name": "Tasuku TSUBAKINO",
+      "first_name": "Tasuku",
+      "description": "The woman with long black and red hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/tasuku-tsubakino-1-285x399.webp?t=1746823693"
+    },
+    "tochimoto": {
+      "full_name": "Tochimoto",
+      "first_name": "Tochimoto",
+      "description": "the man with short brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/tochimoto-1-285x399.webp?t=1751815125"
+    },
+    "tsukasa": {
+      "full_name": "Tsukasa TAKAHASHI",
+      "first_name": "Tsukasa",
+      "description": "the man with brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/tsukasa-takahashi-1-285x399.webp?t=1746320610"
+    },
+    "uryu": {
+      "full_name": "Uryu SAKAKI",
+      "first_name": "Uryu",
+      "description": "The man with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/uryu-sakaki-1-285x399.webp?t=1746320726"
+    },
+    "yama": {
+      "full_name": "Yama",
+      "first_name": "Yama",
+      "description": "The elderly man with gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yama-wind-breaker-1-285x399.webp?t=1712635590"
+    },
+    "yodai": {
+      "full_name": "Yodai MATSUMOTO",
+      "first_name": "Yodai",
+      "description": "The man with short orange hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yodai-matsumoto-1-285x399.webp?t=1719693340"
+    },
+    "yukinari": {
+      "full_name": "Yukinari ARIMA",
+      "first_name": "Yukinari",
+      "description": "The man with short brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yukinari-arima-1-285x399.webp?t=1719698990"
+    },
+    "yuri": {
+      "full_name": "Yuri KAKIUCHI",
+      "first_name": "Yuri",
+      "description": "the person with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yuri-kakiuchi-1-285x399.webp?t=1719699092"
+    },
+    "yuto": {
+      "full_name": "Yuto KUSUMI",
+      "first_name": "Yuto",
+      "description": "The man with short brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yuto-kusumi-1-285x399.webp?t=1719103602"
+    }
+  },
+  "zatsutabi_thats_journey": {
+    "chika": {
+      "full_name": "Chika SUZUGAMORI",
+      "first_name": "Chika",
+      "description": "The woman with blue hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/chika-suzugamori-1-285x399.webp?t=1747152076"
+    },
+    "fuyune": {
+      "full_name": "Fuyune KOUJIYA",
+      "first_name": "Fuyune",
+      "description": "The woman with long blonde hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/fuyune-koujiya-1-285x399.webp?t=1745866766"
+    },
+    "koyomi": {
+      "full_name": "Koyomi HASUNUMA",
+      "first_name": "Koyomi",
+      "description": "the woman with long purple hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/koyomi-hasunuma-1-285x399.webp?t=1747151948"
+    },
+    "riri": {
+      "full_name": "Riri TENKUUBASHI",
+      "first_name": "Riri",
+      "description": "The woman with long black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/riri-tenkuubashi-1-285x399.webp?t=1745866743"
+    },
+    "yui": {
+      "full_name": "Yui UNOKI",
+      "first_name": "Yui",
+      "description": "The woman with long red hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yui-unoki-1-285x399.webp?t=1747690017"
+    },
+    "yoshimoto": {
+      "full_name": "Yoshimoto",
+      "first_name": "Yoshimoto",
+      "description": "the person with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/yoshimoto-zatsu-tabi-1-285x399.webp?t=1747690164"
+    },
+    "bartender": {
+      "full_name": "Bartender",
+      "first_name": "Bartender",
+      "description": "the man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/bartender-zatsutabi-thats-journey-1-285x399.webp?t=1746304399"
+    },
+    "bus": {
+      "full_name": "Bus Driver",
+      "first_name": "Bus",
+      "description": "The elderly man with gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/bus-driver-zatsutabi-thats-journey-1-285x398.webp?t=1745250980"
+    },
+    "dragon": {
+      "full_name": "Dragon God",
+      "first_name": "Dragon",
+      "description": "The glowing-eyed dragon creature",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/dragon-god-zatsutabi-thats-journey-1-285x399.webp?t=1751211083"
+    },
+    "female": {
+      "full_name": "Female Clerk",
+      "first_name": "Female",
+      "description": "the woman with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/female-clerk-zatsutabi-thats-journey-1-254x355.webp?t=1751211487"
+    },
+    "front": {
+      "full_name": "Front Desk Lady",
+      "first_name": "Front",
+      "description": "The person with short gray hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/front-desk-lady-1-285x399.webp?t=1745866564"
+    },
+    "grandpa": {
+      "full_name": "Grandpa Nakazo",
+      "first_name": "Grandpa",
+      "description": "the elderly man with gray hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/grandpa-nakazo-1-285x399.webp?t=1751209571"
+    },
+    "landlady": {
+      "full_name": "Landlady",
+      "first_name": "Landlady",
+      "description": "The elderly woman with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/landlady-zatsutabi-thats-journey-1-285x399.webp?t=1751210856"
+    },
+    "male": {
+      "full_name": "Male Clerk",
+      "first_name": "Male",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/male-clerk-1-285x399.webp?t=1751211281"
+    },
+    "matsuo": {
+      "full_name": "Matsuo BASHO",
+      "first_name": "Matsuo",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "mother": {
+      "full_name": "Mother",
+      "first_name": "Mother",
+      "description": "the person with long brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mother-zatsutabi-thats-journey-1-277x388.webp?t=1751210614"
+    },
+    "narrator": {
+      "full_name": "Narrator",
+      "first_name": "Narrator",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "oyster": {
+      "full_name": "Oyster Mascot",
+      "first_name": "Oyster",
+      "description": "The small eggplant creature",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/oyster-mascot-1-285x399.webp?t=1746303472"
+    },
+    "seafood": {
+      "full_name": "Seafood Store Clerk",
+      "first_name": "Seafood",
+      "description": "The man with black hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/seafood-store-clerk-1-285x399.webp?t=1751211366"
+    },
+    "sora": {
+      "full_name": "Sora KAWAI",
+      "first_name": "Sora",
+      "description": "The round gray creature with horns.",
+      "image_url": "https://cdn.anime-planet.com/images/characters/default/default-character.png"
+    },
+    "udon": {
+      "full_name": "Udon Shop Staff",
+      "first_name": "Udon",
+      "description": "the man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/udon-shop-staff-1-285x399.webp?t=1746305477"
+    },
+    "young": {
+      "full_name": "Young Boy",
+      "first_name": "Young",
+      "description": "The young boy with brown hair.",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/young-boy-zatsutabi-thats-journey-1-285x399.webp?t=1751210489"
+    }
+  }
+}

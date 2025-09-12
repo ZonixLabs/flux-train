@@ -3,7 +3,6 @@ from labelbox import Client, Project
 import json
 from datetime import datetime
 import os
-
 # Initialize the Labelbox client
 client = Client(api_key=os.environ.get("LABELBOX_API_KEY"))
 

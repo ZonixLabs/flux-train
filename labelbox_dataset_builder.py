@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Script to parse Labelbox NDJSON annotations and create a training dataset with character assets.
+Script to parse Labelbox NDJSON annotations and create a training dataset with character integration.
 
-- Robust anime mapping via normalization and token-overlap fallback
-- Explicit logging + raising if a video has no mapping (never silently skipped)
-- Same output structure as your previous script
+- Character descriptions loaded from character_descriptions.json
+- Characters integrated into context frames instead of separate assets
+- Updated prompt format with "Create the next shot:" prefix
 
 Requirements:
-    pip install beautifulsoup4 requests
+    pip install beautifulsoup4 requests opencv-python
     # optional (helps with Cloudflare)
     pip install curl-cffi
 """
@@ -22,7 +22,7 @@ import tempfile
 from urllib.parse import urljoin
 import re
 import time
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List, Tuple, Optional, Set
 from bs4 import BeautifulSoup
 
 # --------------------------- Logging ---------------------------------
@@ -84,6 +84,22 @@ ANIME_ALIASES: Dict[str, str] = {
 # If True, a video without a mapping raises an error (and is logged). If False, it only logs and skips.
 STRICT_MAPPING = True
 
+# Load character descriptions
+CHARACTER_DESCRIPTIONS = {}
+try:
+    with open('character_descriptions.json', 'r') as f:
+        CHARACTER_DESCRIPTIONS = json.load(f)
+        # Strip trailing periods from all descriptions when loading
+        for series_key, characters in CHARACTER_DESCRIPTIONS.items():
+            for char_key, char_data in characters.items():
+                if 'description' in char_data:
+                    char_data['description'] = char_data['description'].rstrip('.')
+        LOG.info(f"Loaded character descriptions for {len(CHARACTER_DESCRIPTIONS)} series")
+except FileNotFoundError:
+    LOG.warning("character_descriptions.json not found. Character tagging will be skipped.")
+except json.JSONDecodeError as e:
+    LOG.error(f"Error parsing character_descriptions.json: {e}")
+
 # ----------------------- Helpers -------------------------------------
 
 def _norm_key(s: str) -> str:
@@ -101,69 +117,6 @@ def _norm_key(s: str) -> str:
     s = re.sub(r"[^a-z0-9]+", "_", s)
     s = re.sub(r"_+", "_", s).strip("_")
     return s
-
-def fetch_character_page(url: str) -> Optional[BeautifulSoup]:
-    """Fetch and parse an anime character page."""
-    try:
-        if cffi_requests:
-            response = cffi_requests.get(url, impersonate="chrome")
-        else:
-            response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
-        response.raise_for_status()
-        return BeautifulSoup(response.content, 'html.parser')
-    except Exception as e:
-        LOG.error(f"Error fetching {url}: {e}")
-        return None
-
-def extract_characters(soup: BeautifulSoup) -> Dict[str, Dict[str, Optional[str]]]:
-    """Extract character names and images from anime-planet page."""
-    characters: Dict[str, Dict[str, Optional[str]]] = {}
-
-    # Primary structure: tables under <h3 class="sub">
-    categories = soup.find_all('h3', class_='sub')
-    for category in categories:
-        table = category.find_next_sibling('table')
-        if not table:
-            continue
-
-        for row in table.find_all('tr'):
-            # Get character image
-            img_cell = row.find('td', class_='tableAvatar')
-            img_url = None
-            if img_cell:
-                img = img_cell.find('img')
-                if img and img.get('src'):
-                    img_url = img['src']
-                    if img_url and not img_url.startswith('http'):
-                        img_url = urljoin('https://www.anime-planet.com', img_url)
-
-            # Get character name
-            name_cell = row.find('td', class_='tableCharInfo')
-            if name_cell:
-                name_link = name_cell.find('a', class_='name')
-                if name_link:
-                    full_name = name_link.get_text(strip=True)
-                    if full_name:
-                        first_name = full_name.split()[0]
-                        key = first_name.lower()
-                        if key not in characters:
-                            characters[key] = {'name': full_name, 'image': img_url}
-
-    # Fallback (site A/B tests sometimes change markup): try generic grid of anchors with images
-    if not characters:
-        for a in soup.select("a[href*='/character/']"):
-            full_name = a.get_text(strip=True)
-            if not full_name:
-                continue
-            img = a.find('img')
-            img_url = img.get('src') if img and img.get('src') else None
-            if img_url and not img_url.startswith('http'):
-                img_url = urljoin('https://www.anime-planet.com', img_url)
-            key = full_name.split()[0].lower()
-            if key not in characters:
-                characters[key] = {'name': full_name, 'image': img_url}
-
-    return characters
 
 def _resolve_anime_key_from_video(video_name: str) -> str:
     """
@@ -202,54 +155,6 @@ def _resolve_anime_key_from_video(video_name: str) -> str:
         LOG.warning(msg)
         return ""
 
-def get_anime_characters(video_name: str) -> Dict[str, Dict[str, Optional[str]]]:
-    """Get character data for a given anime video, robust to punctuation/casing."""
-    anime_key = _resolve_anime_key_from_video(video_name)
-    if not anime_key:
-        return {}
-
-    url = ANIME_MAPPING[anime_key]
-    LOG.info(f"Fetching characters from: {anime_key} -> {url}")
-    soup = fetch_character_page(url)
-    if not soup:
-        LOG.warning(f"Failed to parse characters page: {url}")
-        return {}
-
-    characters = extract_characters(soup)
-    LOG.info(f"Found {len(characters)} characters for {anime_key}")
-    return characters
-
-def tag_characters_in_prompt(prompt: str, characters: Dict[str, Dict[str, Optional[str]]]) -> Tuple[str, List[Dict]]:
-    """Tag character names in prompt and return tagged prompt + character list."""
-    if not characters:
-        return prompt, []
-
-    tagged_prompt = prompt
-    found_characters = []
-    char_num = 1
-
-    # Split prompt into words and check each
-    words = re.findall(r'\b\w+\b', prompt)
-
-    for word in words:
-        word_lower = word.lower()
-        if word_lower in characters:
-            # Only tag first occurrence of each character
-            if not any(c['name'] == characters[word_lower]['name'] for c in found_characters):
-                # Replace the word with tagged version
-                pattern = r'\b' + re.escape(word) + r'\b'
-                replacement = f"{word} ({char_num})"
-                tagged_prompt = re.sub(pattern, replacement, tagged_prompt, count=1)
-
-                found_characters.append({
-                    'number': char_num,
-                    'name': characters[word_lower]['name'],
-                    'image': characters[word_lower]['image']
-                })
-                char_num += 1
-
-    return tagged_prompt, found_characters
-
 def download_character_image(url: str, output_path: Path) -> bool:
     """Download character image from URL."""
     try:
@@ -263,8 +168,58 @@ def download_character_image(url: str, output_path: Path) -> bool:
         LOG.warning(f"Failed to download character image {url}: {e}")
         return False
 
-def parse_ndjson(filepath: str):
-    """Parse NDJSON file and return list of annotated videos."""
+def extract_characters_from_text(text: str, anime_characters: Dict) -> Set[str]:
+    """Extract character names mentioned in text."""
+    found_characters = set()
+    text_lower = text.lower()
+    
+    for char_key, char_data in anime_characters.items():
+        # Check for character's first name in text
+        if char_key in text_lower or char_data['first_name'].lower() in text_lower:
+            found_characters.add(char_key)
+    
+    return found_characters
+
+def tag_characters_in_prompt(description: str, anime_key: str) -> Tuple[str, List[str]]:
+    """
+    Tag character names in description with their descriptions.
+    Returns (tagged_description, list_of_character_keys_found)
+    """
+    if not CHARACTER_DESCRIPTIONS or anime_key not in CHARACTER_DESCRIPTIONS:
+        return description, []
+    
+    anime_characters = CHARACTER_DESCRIPTIONS[anime_key]
+    tagged_description = description
+    found_characters = []
+    
+    # Sort characters by name length (longest first) to avoid partial replacements
+    sorted_chars = sorted(anime_characters.items(), 
+                         key=lambda x: len(x[1]['first_name']), 
+                         reverse=True)
+    
+    for char_key, char_data in sorted_chars:
+        first_name = char_data['first_name']
+        # Case-insensitive search but preserve original case in replacement
+        pattern = re.compile(r'\b' + re.escape(first_name) + r'\b', re.IGNORECASE)
+        
+        if pattern.search(tagged_description):
+            # Replace first occurrence only with description
+            def replacer(match):
+                return f"{match.group()} ({char_data['description']})"
+            
+            tagged_description = pattern.sub(replacer, tagged_description, count=1)
+            found_characters.append(char_key)
+    
+    return tagged_description, found_characters
+
+def parse_ndjson(filepath: str, accepted_statuses: List[str] = ['DONE']):
+    """
+    Parse NDJSON file and return list of annotated videos.
+    
+    Args:
+        filepath: Path to NDJSON file
+        accepted_statuses: List of workflow statuses to accept (default: ['DONE'])
+    """
     annotated_videos = []
 
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -273,17 +228,23 @@ def parse_ndjson(filepath: str):
                 data = json.loads(line)
 
                 # Check if this video has annotations
-                for _, project_data in data.get('projects', {}).items():
+                for project_id, project_data in data.get('projects', {}).items():
                     if project_data.get('labels'):
-                        annotated_videos.append({
-                            'video_url': data['data_row']['row_data'],
-                            'video_name': data['data_row']['global_key'],
-                            'labels': project_data['labels'],
-                            'frame_count': data.get('media_attributes', {}).get('frame_count'),
-                        })
+                        # Check workflow status at PROJECT level, not label level
+                        workflow_status = project_data.get('project_details', {}).get('workflow_status', 'UNKNOWN')
+                        
+                        # Only include if status is in accepted list
+                        if workflow_status in accepted_statuses:
+                            annotated_videos.append({
+                                'video_url': data['data_row']['row_data'],
+                                'video_name': data['data_row']['global_key'],
+                                'labels': project_data['labels'],
+                                'frame_count': data.get('media_attributes', {}).get('frame_count'),
+                                'workflow_status': workflow_status
+                            })
 
     return annotated_videos
-
+    
 def download_video(video_url: str, sas_token: str, output_path: str) -> str:
     """Download video from Azure Blob Storage with SAS token."""
     # Fix double slash issue if present
@@ -320,7 +281,7 @@ def extract_frame(video_path: str, frame_number: int, output_path: Path) -> bool
         return False
 
 def format_text_annotation(frame_data, frame_number, current_scene):
-    """Format the annotation text according to the specified template."""
+    """Format the annotation text according to the new template."""
     classifications = frame_data.get('classifications', [])
 
     # Initialize variables
@@ -377,20 +338,10 @@ def format_text_annotation(frame_data, frame_number, current_scene):
                         current_scene['inside_outside'] = inside_outside
                         current_scene['time_of_day'] = time_of_day
 
-    # Format the output
+    # Format the output with new structure
     lines = []
 
-    # First line: scene information (always include location if available)
-    scene_line = scene_change
-    if location:
-        scene_line += f": {location}"
-        if inside_outside or time_of_day:
-            scene_line += f" - {inside_outside}"
-            if time_of_day:
-                scene_line += f" - {time_of_day}"
-    lines.append(scene_line)
-
-    # Second line: shot description and technical details
+    # Build the main description line with shot details
     shot_details = []
     if text_description:
         shot_details.append(text_description)
@@ -400,9 +351,20 @@ def format_text_annotation(frame_data, frame_number, current_scene):
         shot_details.append(shot_framing)
     if shot_angle:
         shot_details.append(shot_angle)
-
+    
+    # Main description (will be prefixed with "Create the next shot:" later)
     if shot_details:
         lines.append(", ".join(shot_details))
+    
+    # Scene information goes at the bottom
+    scene_line = scene_change
+    if location:
+        scene_line += f": {location}"
+        if inside_outside or time_of_day:
+            scene_line += f" - {inside_outside}"
+            if time_of_day:
+                scene_line += f" - {time_of_day}"
+    lines.append(scene_line)
 
     return "\n".join(lines), current_scene
 
@@ -415,75 +377,119 @@ def clean_video_name(video_name: str) -> str:
     name = name.replace(' ', '_').replace('/', '_')
     return name
 
-def create_training_samples(video_frames, characters, output_dir: Path, global_sample_num: int) -> int:
-    """Create training samples with sliding window approach."""
+def create_training_samples(video_frames, anime_key: str, output_dir: Path, global_sample_num: int) -> Tuple[int, List[Path]]:
+    """
+    Create training samples with sliding window approach and character integration.
+    Returns (next_sample_num, list_of_temp_character_images_to_cleanup)
+    """
     sample_num = global_sample_num
+    
+    # Get anime characters if available
+    anime_characters = CHARACTER_DESCRIPTIONS.get(anime_key.lower().replace("-", "_"), {})
+    
+    # Cache for downloaded character images to avoid re-downloading
+    character_image_cache = {}
 
     # video_frames is list of (frame_path, text_content) tuples
     for i in range(len(video_frames)):
         sample_dir = output_dir / f"sample_{sample_num:03d}"
         sample_dir.mkdir(parents=True, exist_ok=True)
 
-        # Create directories
-        (sample_dir / "assets").mkdir(exist_ok=True)
+        # Create in/ directory
         (sample_dir / "in").mkdir(exist_ok=True)
 
         # Determine context frames (max 4)
         start_idx = max(0, i - 4)
         context_frames = video_frames[start_idx:i]
-
-        # Copy context frames to in/
-        for j, (frame_path, _) in enumerate(context_frames):
-            in_path = sample_dir / "in" / f"{j+1}.jpg"
-            img = cv2.imread(str(frame_path))
+        
+        # Track which characters appear in context frames
+        characters_in_context = set()
+        for _, context_text in context_frames:
+            # Extract just the description part (first line before scene info)
+            desc_lines = context_text.split('\n')
+            if desc_lines:
+                found_chars = extract_characters_from_text(desc_lines[0], anime_characters)
+                characters_in_context.update(found_chars)
+        
+        # Process current frame text
+        out_frame_path, text_content = video_frames[i]
+        lines = text_content.split('\n')
+        description_line = lines[0] if len(lines) > 0 else ""
+        scene_line = lines[1] if len(lines) > 1 else ""
+        
+        # Tag characters in description and get list of characters mentioned
+        tagged_description, mentioned_characters = tag_characters_in_prompt(description_line, anime_key.lower().replace("-", "_"))
+        
+        # Determine which characters need to be added to context
+        characters_to_add = []
+        for char_key in mentioned_characters:
+            if char_key not in characters_in_context and char_key in anime_characters:
+                characters_to_add.append(char_key)
+        
+        # Prepare all images for in/ directory
+        in_images = []
+        
+        # Add character images first (at position 1)
+        for char_key in characters_to_add:
+            char_data = anime_characters[char_key]
+            if char_data.get('image_url'):
+                # Check cache first
+                if char_key not in character_image_cache:
+                    # Download character image to temp location
+                    temp_char_path = Path(tempfile.mktemp(suffix='_char.jpg'))
+                    if download_character_image(char_data['image_url'], temp_char_path):
+                        character_image_cache[char_key] = temp_char_path
+                        LOG.debug(f"Downloaded and cached character {char_data['first_name']}")
+                
+                if char_key in character_image_cache:
+                    in_images.append(character_image_cache[char_key])
+                    LOG.debug(f"Added character {char_data['first_name']} to context")
+        
+        # Add context frames after character images
+        for frame_path, _ in context_frames:
+            in_images.append(frame_path)
+        
+        # Copy all images to in/ directory with proper numbering
+        for j, img_path in enumerate(in_images, 1):
+            in_path = sample_dir / "in" / f"{j}.jpg"
+            img = cv2.imread(str(img_path))
             if img is not None:
                 cv2.imwrite(str(in_path), img, [cv2.IMWRITE_JPEG_QUALITY, 95])
-
+        
         # Copy target frame as out.jpg
-        out_frame_path, text_content = video_frames[i]
         img = cv2.imread(str(out_frame_path))
         if img is not None:
             cv2.imwrite(str(sample_dir / "out.jpg"), img, [cv2.IMWRITE_JPEG_QUALITY, 95])
-
-        # Split the text to handle scene and description separately
-        lines = text_content.split('\n')
-        scene_line = lines[0] if len(lines) > 0 else ""
-        description_line = lines[1] if len(lines) > 1 else ""
-
-        # Only tag characters in the description line, not the scene line
-        if description_line:
-            tagged_description, found_characters = tag_characters_in_prompt(description_line, characters)
-            # Combine scene line with tagged description
-            prompt_text = f"{scene_line}\n{tagged_description}" if scene_line else tagged_description
-        else:
-            # No description line, just use scene line
-            prompt_text = scene_line
-            found_characters = []
-
-        # Save tagged prompt
+        
+        # Create final prompt with "Create the next shot:" prefix
+        prompt_text = f"Create the next shot: {tagged_description}"
+        if scene_line:
+            prompt_text += f"\n{scene_line}"
+        
+        # Save prompt
         with open(sample_dir / "prompt.txt", 'w', encoding='utf-8') as f:
             f.write(prompt_text)
 
-        # Download character assets
-        for char in found_characters:
-            if char['image']:
-                asset_path = sample_dir / "assets" / f"{char['number']}.jpg"
-                download_character_image(char['image'], asset_path)
-
-        LOG.info(f"Created sample_{sample_num:03d}: {len(context_frames)} ctx frames, {len(found_characters)} char assets")
+        LOG.info(f"Created sample_{sample_num:03d}: {len(context_frames)} ctx frames, "
+                f"{len(characters_to_add)} char images added, {len(in_images)} total in/")
         sample_num += 1
-
-    return sample_num
+    
+    # Return the character image paths for cleanup later
+    return sample_num, list(character_image_cache.values())
 
 def process_video_for_training(video_data, sas_token: str, output_dir: Path, global_sample_num: int) -> int:
     """Process a single video for training dataset creation."""
     video_name = clean_video_name(video_data['video_name'])
-    LOG.info(f"Resolving anime for video: '{video_name}'")
+    LOG.info(f"Processing video: '{video_name}'")
 
-    # Get character data for this anime (will raise if no mapping in STRICT mode)
-    characters = get_anime_characters(video_name)
-    if not characters:
-        LOG.warning(f"No characters parsed for '{video_name}'. Proceeding without character tagging.")
+    # Resolve anime key for character lookup
+    try:
+        anime_key = _resolve_anime_key_from_video(video_name)
+        LOG.info(f"Mapped to anime: {anime_key}")
+    except KeyError as e:
+        if STRICT_MAPPING:
+            raise
+        anime_key = ""
 
     # Download video to temporary file
     with tempfile.NamedTemporaryFile(suffix='.mp4', delete=False) as tmp_file:
@@ -528,8 +534,7 @@ def process_video_for_training(video_data, sas_token: str, output_dir: Path, glo
                 temp_frame_dir = Path(tempfile.mkdtemp())
 
                 for idx, (frame_num, frame_data) in enumerate(frames_to_process):
-                    # Convert to 0-based indexing for OpenCV (subtract 1)
-                    frame_number = int(frame_num) - 1
+                    frame_number = int(frame_num)
 
                     # Extract frame
                     frame_path = temp_frame_dir / f"frame_{idx:03d}.png"
@@ -545,7 +550,15 @@ def process_video_for_training(video_data, sas_token: str, output_dir: Path, glo
 
                 # Create training samples
                 if video_frames:
-                    global_sample_num = create_training_samples(video_frames, characters, output_dir, global_sample_num)
+                    global_sample_num, temp_char_images = create_training_samples(video_frames, anime_key, output_dir, global_sample_num)
+                    
+                    # Clean up temp character images
+                    for char_img in temp_char_images:
+                        try:
+                            if char_img.exists():
+                                char_img.unlink()
+                        except:
+                            pass
 
                 # Cleanup temp frames
                 import shutil
@@ -562,17 +575,29 @@ def process_video_for_training(video_data, sas_token: str, output_dir: Path, glo
 
 def main():
     # Configuration
-    NDJSON_FILE = os.environ.get("LABELBOX_NDJSON_FILE", "labelbox_export_20250827_201202.ndjson")
-    SAS_TOKEN = os.environ.get("RUNPOD_SECRET_AZURE_SAS_TOKEN")
+    NDJSON_FILE = os.environ.get("LABELBOX_NDJSON_FILE", "labelbox_export_20250912_185833.ndjson")
+    SAS_TOKEN = os.environ.get("AZURE_SAS_TOKEN")
     OUTPUT_DIR = Path("data") / "train"
+    
+    # Workflow statuses to accept (can be modified as needed)
+    # Options: 'DONE', 'IN_REVIEW', 'IN_REWORK', etc.
+    ACCEPTED_STATUSES = ['DONE']  # Change this to include other statuses if needed
 
     # Create output directory
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     # Parse NDJSON file
-    LOG.info("Parsing NDJSON file...")
-    annotated_videos = parse_ndjson(NDJSON_FILE)
-    LOG.info(f"Found {len(annotated_videos)} annotated videos")
+    LOG.info(f"Parsing NDJSON file (accepting workflow_status: {ACCEPTED_STATUSES})...")
+    annotated_videos = parse_ndjson(NDJSON_FILE, accepted_statuses=ACCEPTED_STATUSES)
+    LOG.info(f"Found {len(annotated_videos)} annotated videos with accepted workflow status")
+    
+    if annotated_videos:
+        # Log the workflow statuses found
+        status_counts = {}
+        for video in annotated_videos:
+            status = video.get('workflow_status', 'UNKNOWN')
+            status_counts[status] = status_counts.get(status, 0) + 1
+        LOG.info(f"Workflow status distribution: {status_counts}")
 
     # Global sample counter
     global_sample_num = 1
@@ -580,7 +605,7 @@ def main():
     # Process each video
     for i, video_data in enumerate(annotated_videos, 1):
         video_name = clean_video_name(video_data['video_name'])
-        LOG.info(f"[{i}/{len(annotated_videos)}] Processing: {video_name}")
+        LOG.info(f"[{i}/{len(annotated_videos)}] Processing: {video_name} (status: {video_data.get('workflow_status', 'UNKNOWN')})")
 
         try:
             global_sample_num = process_video_for_training(video_data, SAS_TOKEN, OUTPUT_DIR, global_sample_num)
