@@ -5,7 +5,7 @@ from datetime import datetime
 import os
 
 # Initialize the Labelbox client
-client = Client(api_key=os.environ.get("RUNPOD_SECRET_LABELBOX_API_KEY"))
+client = Client(api_key=os.environ.get("LABELBOX_API_KEY"))
 
 # Get your project by ID
 # Replace with your actual project ID
