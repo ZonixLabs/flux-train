@@ -2543,6 +2543,43 @@
       "image_url": "https://cdn.anime-planet.com/characters/primary/yamada-see-you-tomorrow-at-the-food-court-1-285x399.webp?t=1754931320"
     }
   },
+  "solo_camping_for_two": {
+    "gen": {
+      "full_name": "Gen KINOKURA",
+      "first_name": "Gen",
+      "description": "The man with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/gen-kinokura-1.webp?t=1753029079"
+    },
+    "shizuku": {
+      "full_name": "Shizuku KUSANO",
+      "first_name": "Shizuku",
+      "description": "the woman with long light brown hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/shizuku-kusano-1.webp?t=1752195086"
+    },
+    "akihito": {
+      "full_name": "Akihito TAKIGAWA",
+      "first_name": "Akihito",
+      "description": "The man with long dark hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/akihito-takigawa-1.webp?t=1754155836"
+    },
+    "kana": {
+      "full_name": "Kana SERIZAWA",
+      "first_name": "Kana",
+      "description": "The woman with black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/kana-serizawa-1.webp?t=1757721161"
+    },
+    "mizuki": {
+      "full_name": "Mizuki HINO",
+      "first_name": "Mizuki",
+      "description": "The woman with green hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/mizuki-hino-1.webp?t=1753028005"
+    },
+    "saya": {
+      "full_name": "Saya OOZORA",
+      "first_name": "Saya",
+      "description": "The woman with long black hair",
+      "image_url": "https://cdn.anime-planet.com/characters/primary/saya-oozora-1.webp?t=1753028042"
+    },
   "summer_pockets": {
     "hairi": {
       "full_name": "Hairi TAKAHARA",
