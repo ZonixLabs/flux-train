@@ -5,9 +5,10 @@ Script to parse Labelbox NDJSON annotations and create a training dataset with c
 - Character descriptions loaded from character_descriptions.json
 - Characters integrated into context frames instead of separate assets
 - Updated prompt format with "Create the next shot:" prefix
+- All mentioned characters always included with stitched reference images
 
 Requirements:
-    pip install beautifulsoup4 requests opencv-python
+    pip install beautifulsoup4 requests opencv-python numpy
     # optional (helps with Cloudflare)
     pip install curl-cffi
 """
@@ -18,6 +19,7 @@ import logging
 import requests
 from pathlib import Path
 import cv2
+import numpy as np
 import tempfile
 from urllib.parse import urljoin
 import re
@@ -193,6 +195,9 @@ def tag_characters_in_prompt(description: str, anime_key: str) -> Tuple[str, Lis
     tagged_description = description
     found_characters = []
     
+    # Skip these common words that shouldn't be tagged as character names
+    SKIP_NAMES = {'the', 'a', 'an', 'person', 'man', 'woman', 'girl', 'boy', 'guide'}
+    
     # Sort characters by name length (longest first) to avoid partial replacements
     sorted_chars = sorted(anime_characters.items(), 
                          key=lambda x: len(x[1]['first_name']), 
@@ -200,6 +205,11 @@ def tag_characters_in_prompt(description: str, anime_key: str) -> Tuple[str, Lis
     
     for char_key, char_data in sorted_chars:
         first_name = char_data['first_name']
+        
+        # Skip if it's a common word
+        if first_name.lower() in SKIP_NAMES:
+            continue
+            
         # Case-insensitive search but preserve original case in replacement
         pattern = re.compile(r'\b' + re.escape(first_name) + r'\b', re.IGNORECASE)
         
@@ -280,6 +290,97 @@ def extract_frame(video_path: str, frame_number: int, output_path: Path) -> bool
     else:
         cap.release()
         return False
+
+def stitch_images_horizontally(image_paths: List[Path], output_path: Path) -> bool:
+    """Stitch multiple images horizontally into one image."""
+    if not image_paths:
+        return False
+    
+    images = []
+    max_height = 0
+    total_width = 0
+    
+    # Load all images and find dimensions
+    for img_path in image_paths:
+        img = cv2.imread(str(img_path))
+        if img is None:
+            LOG.warning(f"Failed to load image for stitching: {img_path}")
+            continue
+        images.append(img)
+        h, w = img.shape[:2]
+        max_height = max(max_height, h)
+        total_width += w
+    
+    if not images:
+        return False
+    
+    # Create blank canvas
+    stitched = np.zeros((max_height, total_width, 3), dtype=np.uint8)
+    
+    # Place images side by side
+    x_offset = 0
+    for img in images:
+        h, w = img.shape[:2]
+        # Center vertically if image is shorter than max_height
+        y_offset = (max_height - h) // 2
+        stitched[y_offset:y_offset+h, x_offset:x_offset+w] = img
+        x_offset += w
+    
+    # Save stitched image
+    cv2.imwrite(str(output_path), stitched, [cv2.IMWRITE_JPEG_QUALITY, 95])
+    return True
+
+def stitch_all_inputs_horizontally(image_paths: List[Path], output_path: Path, target_height: int = 1024, padding: int = 8) -> bool:
+    """
+    Stitch all input images horizontally with fixed height and padding.
+    
+    Args:
+        image_paths: List of image paths to stitch
+        output_path: Where to save the final stitched image
+        target_height: Height to resize all images to (default 1024)
+        padding: Pixels of padding between images (default 8)
+    """
+    if not image_paths:
+        return False
+    
+    resized_images = []
+    total_width = 0
+    
+    # Load and resize all images to target height
+    for img_path in image_paths:
+        img = cv2.imread(str(img_path))
+        if img is None:
+            LOG.warning(f"Failed to load image for stitching: {img_path}")
+            continue
+        
+        # Resize to target height while maintaining aspect ratio
+        h, w = img.shape[:2]
+        aspect_ratio = w / h
+        new_width = int(target_height * aspect_ratio)
+        resized = cv2.resize(img, (new_width, target_height), interpolation=cv2.INTER_LANCZOS4)
+        
+        resized_images.append(resized)
+        total_width += new_width
+    
+    if not resized_images:
+        return False
+    
+    # Add padding to total width (padding between images)
+    total_width += padding * (len(resized_images) - 1)
+    
+    # Create blank canvas with white background for padding
+    stitched = np.full((target_height, total_width, 3), 255, dtype=np.uint8)
+    
+    # Place images side by side with padding
+    x_offset = 0
+    for img in resized_images:
+        h, w = img.shape[:2]
+        stitched[0:h, x_offset:x_offset+w] = img
+        x_offset += w + padding
+    
+    # Save stitched image
+    cv2.imwrite(str(output_path), stitched, [cv2.IMWRITE_JPEG_QUALITY, 95])
+    return True
 
 def format_text_annotation(frame_data, frame_number, current_scene):
     """Format the annotation text according to the new template."""
@@ -378,12 +479,13 @@ def clean_video_name(video_name: str) -> str:
     name = name.replace(' ', '_').replace('/', '_')
     return name
 
-def create_training_samples(video_frames, anime_key: str, output_dir: Path, global_sample_num: int) -> Tuple[int, List[Path]]:
+def create_training_samples(video_frames, anime_key: str, output_dir: Path, global_sample_num: int) -> Tuple[int, List[Path], List[dict]]:
     """
     Create training samples with sliding window approach and character integration.
-    Returns (next_sample_num, list_of_temp_character_images_to_cleanup)
+    Returns (next_sample_num, list_of_temp_character_images_to_cleanup, list_of_metadata_entries)
     """
     sample_num = global_sample_num
+    metadata_entries = []
     
     # Get anime characters if available
     anime_characters = CHARACTER_DESCRIPTIONS.get(anime_key.lower().replace("-", "_"), {})
@@ -396,21 +498,9 @@ def create_training_samples(video_frames, anime_key: str, output_dir: Path, glob
         sample_dir = output_dir / f"sample_{sample_num:03d}"
         sample_dir.mkdir(parents=True, exist_ok=True)
 
-        # Create in/ directory
-        (sample_dir / "in").mkdir(exist_ok=True)
-
         # Determine context frames (max 4)
         start_idx = max(0, i - 4)
         context_frames = video_frames[start_idx:i]
-        
-        # Track which characters appear in context frames
-        characters_in_context = set()
-        for _, context_text in context_frames:
-            # Extract just the description part (first line before scene info)
-            desc_lines = context_text.split('\n')
-            if desc_lines:
-                found_chars = extract_characters_from_text(desc_lines[0], anime_characters)
-                characters_in_context.update(found_chars)
         
         # Process current frame text
         out_frame_path, text_content = video_frames[i]
@@ -421,41 +511,53 @@ def create_training_samples(video_frames, anime_key: str, output_dir: Path, glob
         # Tag characters in description and get list of characters mentioned
         tagged_description, mentioned_characters = tag_characters_in_prompt(description_line, anime_key.lower().replace("-", "_"))
         
-        # Determine which characters need to be added to context
-        characters_to_add = []
+        # Always include all mentioned characters (don't check if they're in context)
+        character_image_paths = []
         for char_key in mentioned_characters:
-            if char_key not in characters_in_context and char_key in anime_characters:
-                characters_to_add.append(char_key)
+            if char_key in anime_characters:
+                char_data = anime_characters[char_key]
+                if char_data.get('image_url'):
+                    # Check cache first
+                    if char_key not in character_image_cache:
+                        # Download character image to temp location
+                        temp_char_path = Path(tempfile.mktemp(suffix='_char.jpg'))
+                        if download_character_image(char_data['image_url'], temp_char_path):
+                            character_image_cache[char_key] = temp_char_path
+                            LOG.debug(f"Downloaded and cached character {char_data['first_name']}")
+                    
+                    if char_key in character_image_cache:
+                        character_image_paths.append(character_image_cache[char_key])
         
-        # Prepare all images for in/ directory
-        in_images = []
+        # Collect all images to be stitched together
+        all_input_images = []
         
-        # Add character images first (at position 1)
-        for char_key in characters_to_add:
-            char_data = anime_characters[char_key]
-            if char_data.get('image_url'):
-                # Check cache first
-                if char_key not in character_image_cache:
-                    # Download character image to temp location
-                    temp_char_path = Path(tempfile.mktemp(suffix='_char.jpg'))
-                    if download_character_image(char_data['image_url'], temp_char_path):
-                        character_image_cache[char_key] = temp_char_path
-                        LOG.debug(f"Downloaded and cached character {char_data['first_name']}")
-                
-                if char_key in character_image_cache:
-                    in_images.append(character_image_cache[char_key])
-                    LOG.debug(f"Added character {char_data['first_name']} to context")
+        # First, stitch character images if we have any, then add to list
+        if character_image_paths:
+            temp_char_stitch = Path(tempfile.mktemp(suffix='_char_stitch.jpg'))
+            if stitch_images_horizontally(character_image_paths, temp_char_stitch):
+                LOG.debug(f"Stitched {len(character_image_paths)} character images")
+                all_input_images.append(temp_char_stitch)
+            else:
+                LOG.warning("Failed to stitch character images")
         
-        # Add context frames after character images
+        # Add context frames
         for frame_path, _ in context_frames:
-            in_images.append(frame_path)
+            all_input_images.append(frame_path)
         
-        # Copy all images to in/ directory with proper numbering
-        for j, img_path in enumerate(in_images, 1):
-            in_path = sample_dir / "in" / f"{j}.jpg"
-            img = cv2.imread(str(img_path))
-            if img is not None:
-                cv2.imwrite(str(in_path), img, [cv2.IMWRITE_JPEG_QUALITY, 95])
+        # Now stitch ALL input images together into one final in.jpg
+        if all_input_images:
+            in_path = sample_dir / "in.jpg"
+            if stitch_all_inputs_horizontally(all_input_images, in_path, target_height=1024, padding=8):
+                LOG.debug(f"Stitched {len(all_input_images)} total input images")
+            else:
+                LOG.warning("Failed to stitch all input images")
+            
+            # Clean up temp character stitch if it was created
+            if character_image_paths and all_input_images[0] != context_frames[0][0] if context_frames else True:
+                try:
+                    all_input_images[0].unlink()
+                except:
+                    pass
         
         # Copy target frame as out.jpg
         img = cv2.imread(str(out_frame_path))
@@ -467,19 +569,24 @@ def create_training_samples(video_frames, anime_key: str, output_dir: Path, glob
         if scene_line:
             prompt_text += f"\n{scene_line}"
         
-        # Save prompt
-        with open(sample_dir / "prompt.txt", 'w', encoding='utf-8') as f:
-            f.write(prompt_text)
+        # Create metadata entry - only one input image now
+        metadata_entry = {
+            "image": f"sample_{sample_num:03d}/out.jpg",
+            "prompt": prompt_text,
+            "edit_image": [f"sample_{sample_num:03d}/in.jpg"]
+        }
+        metadata_entries.append(metadata_entry)
 
+        total_components = len(character_image_paths) + len(context_frames)
         LOG.info(f"Created sample_{sample_num:03d}: {len(context_frames)} ctx frames, "
-                f"{len(characters_to_add)} char images added, {len(in_images)} total in/")
+                f"{len(character_image_paths)} chars, {total_components} components stitched into in.jpg")
         sample_num += 1
     
     # Return the character image paths for cleanup later
-    return sample_num, list(character_image_cache.values())
+    return sample_num, list(character_image_cache.values()), metadata_entries
 
-def process_video_for_training(video_data, sas_token: str, output_dir: Path, global_sample_num: int) -> int:
-    """Process a single video for training dataset creation."""
+def process_video_for_training(video_data, sas_token: str, output_dir: Path, global_sample_num: int) -> Tuple[int, List[dict]]:
+    """Process a single video for training dataset creation. Returns (next_sample_num, metadata_entries)"""
     video_name = clean_video_name(video_data['video_name'])
     LOG.info(f"Processing video: '{video_name}'")
 
@@ -491,6 +598,8 @@ def process_video_for_training(video_data, sas_token: str, output_dir: Path, glo
         if STRICT_MAPPING:
             raise
         anime_key = ""
+
+    video_metadata = []
 
     # Download video to temporary file
     with tempfile.NamedTemporaryFile(suffix='.mp4', delete=False) as tmp_file:
@@ -551,7 +660,10 @@ def process_video_for_training(video_data, sas_token: str, output_dir: Path, glo
 
                 # Create training samples
                 if video_frames:
-                    global_sample_num, temp_char_images = create_training_samples(video_frames, anime_key, output_dir, global_sample_num)
+                    global_sample_num, temp_char_images, metadata_entries = create_training_samples(
+                        video_frames, anime_key, output_dir, global_sample_num
+                    )
+                    video_metadata.extend(metadata_entries)
                     
                     # Clean up temp character images
                     for char_img in temp_char_images:
@@ -570,15 +682,15 @@ def process_video_for_training(video_data, sas_token: str, output_dir: Path, glo
             if os.path.exists(tmp_file.name):
                 os.unlink(tmp_file.name)
 
-    return global_sample_num
+    return global_sample_num, video_metadata
 
 # ------------------------------ Main ---------------------------------
 
 def main():
     # Configuration
-    NDJSON_FILE = os.environ.get("LABELBOX_NDJSON_FILE", "labelbox_export_20250912_185833.ndjson")
+    NDJSON_FILE = os.environ.get("LABELBOX_NDJSON_FILE", "labelbox_export_20251014_003609.ndjson")
     SAS_TOKEN = os.environ.get("AZURE_SAS_TOKEN")
-    OUTPUT_DIR = Path("data") / "train"
+    OUTPUT_DIR = Path("data")
     
     # Workflow statuses to accept (can be modified as needed)
     # Options: 'DONE', 'IN_REVIEW', 'IN_REWORK', etc.
@@ -600,8 +712,9 @@ def main():
             status_counts[status] = status_counts.get(status, 0) + 1
         LOG.info(f"Workflow status distribution: {status_counts}")
 
-    # Global sample counter
+    # Global sample counter and metadata collection
     global_sample_num = 1
+    all_metadata = []
 
     # Process each video
     for i, video_data in enumerate(annotated_videos, 1):
@@ -609,7 +722,8 @@ def main():
         LOG.info(f"[{i}/{len(annotated_videos)}] Processing: {video_name} (status: {video_data.get('workflow_status', 'UNKNOWN')})")
 
         try:
-            global_sample_num = process_video_for_training(video_data, SAS_TOKEN, OUTPUT_DIR, global_sample_num)
+            global_sample_num, video_metadata = process_video_for_training(video_data, SAS_TOKEN, OUTPUT_DIR, global_sample_num)
+            all_metadata.extend(video_metadata)
             LOG.info(f"✓ Completed {video_name}")
         except KeyError as e:
             # Raised when STRICT_MAPPING=True and we can't resolve an anime mapping
@@ -620,8 +734,14 @@ def main():
             LOG.exception(f"✗ Error processing {video_name}: {e}")
             continue
 
+    # Write metadata.json
+    metadata_path = OUTPUT_DIR / "metadata.json"
+    with open(metadata_path, 'w', encoding='utf-8') as f:
+        json.dump(all_metadata, f, indent=2, ensure_ascii=False)
+    
     LOG.info("Training dataset creation complete!")
     LOG.info(f"Total samples created: {global_sample_num - 1}")
+    LOG.info(f"Metadata written to: {metadata_path}")
 
 if __name__ == "__main__":
     main()
