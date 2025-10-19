@@ -4,10 +4,9 @@ Script to parse Labelbox NDJSON annotations and create a training dataset with c
 
 UPDATED: 
 - Character images are square-cropped from top
-- Each character gets a distinct colored border
 - Characters are stitched in grid layouts (1x2, 1x3, 2x2, 3+2, 3x2)
 - Context frames are separate images (max 3)
-- Border colors are included in character tags
+- No colored borders (removed due to bleeding issues)
 
 Requirements:
     ffmpeg (command-line tool)
@@ -18,6 +17,7 @@ import json
 import os
 import logging
 import requests
+import csv
 from pathlib import Path
 import cv2
 import numpy as np
@@ -75,17 +75,6 @@ ANIME_ALIASES: Dict[str, str] = {
 
 STRICT_MAPPING = True
 
-# Character border colors (BGR format for OpenCV)
-BORDER_COLORS = {
-    'blue': (255, 0, 0),
-    'red': (0, 0, 255),
-    'green': (0, 255, 0),
-    'yellow': (0, 255, 255),
-    'orange': (0, 165, 255),
-}
-
-BORDER_COLOR_NAMES = ['blue', 'red', 'green', 'yellow', 'orange']
-BORDER_WIDTH = 12
 STANDARD_CHAR_SIZE = 384  # All character images resized to this square size
 
 # Load character descriptions
@@ -171,15 +160,6 @@ def resize_to_standard_size(img: np.ndarray, size: int = STANDARD_CHAR_SIZE) -> 
     """Resize image to standard square size."""
     return cv2.resize(img, (size, size), interpolation=cv2.INTER_LANCZOS4)
 
-def add_colored_border(img: np.ndarray, color_bgr: Tuple[int, int, int], width: int = BORDER_WIDTH) -> np.ndarray:
-    """Add a solid colored border around the image."""
-    return cv2.copyMakeBorder(
-        img,
-        width, width, width, width,
-        cv2.BORDER_CONSTANT,
-        value=color_bgr
-    )
-
 def stitch_character_grid(images: List[np.ndarray]) -> Optional[np.ndarray]:
     """Stitch character images in appropriate grid layout based on count."""
     if not images:
@@ -235,8 +215,8 @@ def stitch_character_grid(images: List[np.ndarray]) -> Optional[np.ndarray]:
         LOG.warning(f"Unexpected character count {count}, using horizontal stitch")
         return np.hstack(images)
 
-def tag_characters_in_prompt(description: str, anime_key: str, character_colors: Dict[str, str]) -> Tuple[str, List[str]]:
-    """Tag character names in description with their descriptions and border colors."""
+def tag_characters_in_prompt(description: str, anime_key: str) -> Tuple[str, List[str]]:
+    """Tag character names in description with their descriptions."""
     if not CHARACTER_DESCRIPTIONS or anime_key not in CHARACTER_DESCRIPTIONS:
         return description, []
     
@@ -259,11 +239,8 @@ def tag_characters_in_prompt(description: str, anime_key: str, character_colors:
         pattern = re.compile(r'\b' + re.escape(first_name) + r'\b', re.IGNORECASE)
         
         if pattern.search(tagged_description):
-            border_color = character_colors.get(char_key, '')
-            color_text = f" in the {border_color} border" if border_color else ""
-            
             def replacer(match):
-                return f"{match.group()} ({char_data['description']}{color_text})"
+                return f"{match.group()} ({char_data['description']})"
             
             tagged_description = pattern.sub(replacer, tagged_description, count=1)
             found_characters.append(char_key)
@@ -421,10 +398,13 @@ def format_text_annotation(frame_data, frame_number, current_scene):
     scene_line = scene_change
     if location:
         scene_line += f": {location}"
-        if inside_outside or time_of_day:
-            scene_line += f" - {inside_outside}"
-            if time_of_day:
-                scene_line += f" - {time_of_day}"
+        details = []
+        if inside_outside:
+            details.append(inside_outside)
+        if time_of_day:
+            details.append(time_of_day)
+        if details:
+            scene_line += f" ({', '.join(details)})"
     lines.append(scene_line)
 
     return "\n".join(lines), current_scene
@@ -450,10 +430,11 @@ def pick_segment_starts(label: dict) -> List[int]:
     
     return sorted(set(frames))
 
-def create_training_samples(video_frames, anime_key: str, output_dir: Path, global_sample_num: int) -> Tuple[int, List[Path], List[dict]]:
-    """Create training samples with character borders and separate context frames."""
+def create_training_samples(video_frames, anime_key: str, video_name: str, output_dir: Path, global_sample_num: int) -> Tuple[int, List[Path], List[dict], List[dict]]:
+    """Create training samples with character images and separate context frames."""
     sample_num = global_sample_num
     metadata_entries = []
+    series_tracking = []
     
     anime_characters = CHARACTER_DESCRIPTIONS.get(anime_key.lower().replace("-", "_"), {})
     character_image_cache = {}
@@ -462,7 +443,7 @@ def create_training_samples(video_frames, anime_key: str, output_dir: Path, glob
         sample_dir = output_dir / f"sample_{sample_num:03d}"
         sample_dir.mkdir(parents=True, exist_ok=True)
 
-        # Get up to 3 context frames (changed from 4)
+        # Get up to 3 context frames
         start_idx = max(0, i - 3)
         context_frames = video_frames[start_idx:i]
         context_frames = context_frames[-3:]  # Limit to max 3
@@ -472,7 +453,7 @@ def create_training_samples(video_frames, anime_key: str, output_dir: Path, glob
         description_line = lines[0] if len(lines) > 0 else ""
         scene_line = lines[1] if len(lines) > 1 else ""
         
-        # Find mentioned characters first (without tagging yet)
+        # Find mentioned characters
         mentioned_characters = []
         if anime_key.lower().replace("-", "_") in CHARACTER_DESCRIPTIONS:
             anime_chars = CHARACTER_DESCRIPTIONS[anime_key.lower().replace("-", "_")]
@@ -489,17 +470,10 @@ def create_training_samples(video_frames, anime_key: str, output_dir: Path, glob
                     if pattern.search(description_line):
                         mentioned_characters.append(char_key)
         
-        # Assign colors and process character images
-        character_colors = {}
+        # Process character images (no borders)
         processed_char_images = []
         
-        for idx, char_key in enumerate(mentioned_characters):
-            if idx >= len(BORDER_COLOR_NAMES):
-                break
-                
-            color_name = BORDER_COLOR_NAMES[idx]
-            character_colors[char_key] = color_name
-            
+        for char_key in mentioned_characters:
             if char_key in anime_characters:
                 char_data = anime_characters[char_key]
                 if char_data.get('image_url'):
@@ -511,16 +485,15 @@ def create_training_samples(video_frames, anime_key: str, output_dir: Path, glob
                             LOG.debug(f"Downloaded and cached character {char_data['first_name']}")
                     
                     if char_key in character_image_cache:
-                        # Load, square crop, resize to standard size, and add border
+                        # Load, square crop, and resize to standard size (no border)
                         img = cv2.imread(str(character_image_cache[char_key]))
                         if img is not None:
                             img = square_crop_from_top(img)
                             img = resize_to_standard_size(img)
-                            img = add_colored_border(img, BORDER_COLORS[color_name])
                             processed_char_images.append(img)
         
-        # Now tag characters with their colors
-        tagged_description, _ = tag_characters_in_prompt(description_line, anime_key.lower().replace("-", "_"), character_colors)
+        # Tag characters (without color information)
+        tagged_description, _ = tag_characters_in_prompt(description_line, anime_key.lower().replace("-", "_"))
         
         # Save character image if we have any
         edit_images = []
@@ -550,9 +523,7 @@ def create_training_samples(video_frames, anime_key: str, output_dir: Path, glob
             cv2.imwrite(str(sample_dir / "out.jpg"), img, [cv2.IMWRITE_JPEG_QUALITY, 95])
         
         # Create prompt
-        prompt_text = f"Create the next shot: {tagged_description}"
-        if scene_line:
-            prompt_text += f"\n{scene_line}"
+        prompt_text = f"Create the next shot in the sequence: {tagged_description}. {scene_line}"
         
         metadata_entry = {
             "image": f"sample_{sample_num:03d}/out.jpg",
@@ -560,14 +531,21 @@ def create_training_samples(video_frames, anime_key: str, output_dir: Path, glob
             "edit_image": edit_images
         }
         metadata_entries.append(metadata_entry)
+        
+        # Track series for this sample
+        series_tracking.append({
+            "sample": f"sample_{sample_num:03d}",
+            "series": anime_key,
+            "video": video_name
+        })
 
         LOG.info(f"Created sample_{sample_num:03d}: {len(context_frames)} ctx frames, "
                 f"{len(processed_char_images)} chars → {len(edit_images)} input images")
         sample_num += 1
     
-    return sample_num, list(character_image_cache.values()), metadata_entries
+    return sample_num, list(character_image_cache.values()), metadata_entries, series_tracking
 
-def process_video_for_training(video_data, sas_token: str, output_dir: Path, global_sample_num: int) -> Tuple[int, List[dict]]:
+def process_video_for_training(video_data, sas_token: str, output_dir: Path, global_sample_num: int) -> Tuple[int, List[dict], List[dict]]:
     """Process a single video for training dataset creation."""
     video_name = clean_video_name(video_data['video_name'])
     LOG.info(f"Processing video: '{video_name}'")
@@ -581,6 +559,7 @@ def process_video_for_training(video_data, sas_token: str, output_dir: Path, glo
         anime_key = ""
 
     video_metadata = []
+    video_series_tracking = []
 
     with tempfile.NamedTemporaryFile(suffix='.mp4', delete=False) as tmp_file:
         try:
@@ -626,8 +605,8 @@ def process_video_for_training(video_data, sas_token: str, output_dir: Path, glo
                 frames_data = annotations.get('frames', {})
 
                 for idx, frame_num in enumerate(frame_indices):
-                    # Convert frame index to timestamp
-                    timestamp = frame_num / fps
+                    # Convert frame index to timestamp (Labelbox uses 1-based frame numbering)
+                    timestamp = (frame_num - 1) / fps
                     
                     frame_path = temp_frame_dir / f"frame_{idx:03d}.png"
                     success = extract_frame_ffmpeg(video_path, timestamp, frame_path)
@@ -642,10 +621,11 @@ def process_video_for_training(video_data, sas_token: str, output_dir: Path, glo
                         LOG.warning(f"Failed to extract frame {frame_num} from '{video_name}'")
 
                 if video_frames:
-                    global_sample_num, temp_char_images, metadata_entries = create_training_samples(
-                        video_frames, anime_key, output_dir, global_sample_num
+                    global_sample_num, temp_char_images, metadata_entries, series_tracking = create_training_samples(
+                        video_frames, anime_key, video_name, output_dir, global_sample_num
                     )
                     video_metadata.extend(metadata_entries)
+                    video_series_tracking.extend(series_tracking)
                     
                     for char_img in temp_char_images:
                         try:
@@ -661,14 +641,14 @@ def process_video_for_training(video_data, sas_token: str, output_dir: Path, glo
             if os.path.exists(tmp_file.name):
                 os.unlink(tmp_file.name)
 
-    return global_sample_num, video_metadata
+    return global_sample_num, video_metadata, video_series_tracking
 
 # ------------------------------ Main ---------------------------------
 
 def main():
-    NDJSON_FILE = os.environ.get("LABELBOX_NDJSON_FILE", "labelbox_export_20251016_220050.ndjson")
+    NDJSON_FILE = os.environ.get("LABELBOX_NDJSON_FILE", "labelbox_export_20251018_225034.ndjson")
     SAS_TOKEN = os.environ.get("AZURE_SAS_TOKEN")
-    OUTPUT_DIR = Path("data")
+    OUTPUT_DIR = Path("dataset")
     
     ACCEPTED_STATUSES = ['DONE']
 
@@ -687,14 +667,16 @@ def main():
 
     global_sample_num = 1
     all_metadata = []
+    all_series_tracking = []
 
     for i, video_data in enumerate(annotated_videos, 1):
         video_name = clean_video_name(video_data['video_name'])
         LOG.info(f"[{i}/{len(annotated_videos)}] Processing: {video_name} (status: {video_data.get('workflow_status', 'UNKNOWN')})")
 
         try:
-            global_sample_num, video_metadata = process_video_for_training(video_data, SAS_TOKEN, OUTPUT_DIR, global_sample_num)
+            global_sample_num, video_metadata, video_series_tracking = process_video_for_training(video_data, SAS_TOKEN, OUTPUT_DIR, global_sample_num)
             all_metadata.extend(video_metadata)
+            all_series_tracking.extend(video_series_tracking)
             LOG.info(f"✓ Completed {video_name}")
         except KeyError as e:
             LOG.error(f"✗ Mapping error for {video_name}: {e}")
@@ -707,9 +689,17 @@ def main():
     with open(metadata_path, 'w', encoding='utf-8') as f:
         json.dump(all_metadata, f, indent=2, ensure_ascii=False)
     
+    # Write series tracking CSV
+    series_tracking_path = Path("series_tracking.csv")
+    with open(series_tracking_path, 'w', encoding='utf-8', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=['sample', 'series', 'video'])
+        writer.writeheader()
+        writer.writerows(all_series_tracking)
+    
     LOG.info("Training dataset creation complete!")
     LOG.info(f"Total samples created: {global_sample_num - 1}")
     LOG.info(f"Metadata written to: {metadata_path}")
+    LOG.info(f"Series tracking written to: {series_tracking_path}")
 
 if __name__ == "__main__":
     main()

@@ -1,17 +1,14 @@
 #!/usr/bin/env python3
 """
 Filter dataset to remove samples that don't have input images.
-
 This script:
 1. Reads metadata.json
-2. Checks if in.jpg exists for each sample
-3. Removes sample directories that don't have in.jpg
+2. Checks if 1.jpg, 2.jpg, 3.jpg, or 4.jpg exists for each sample
+3. Removes sample directories that don't have any input images
 4. Creates a cleaned metadata.json
-
 Usage:
     python filter_dataset.py [--data-dir data] [--dry-run]
 """
-
 import json
 import shutil
 from pathlib import Path
@@ -49,14 +46,15 @@ def filter_dataset(data_dir: Path, dry_run: bool = False):
         image_path = entry.get('image', '')
         sample_dir = data_dir / Path(image_path).parent
         
-        # Check if in.jpg exists
-        in_jpg_path = sample_dir / "in.jpg"
+        # Check if any of 1.jpg, 2.jpg, 3.jpg, or 4.jpg exists
+        input_images = [sample_dir / f"{i}.jpg" for i in [1, 2, 3, 4]]
+        has_input = any(img.exists() for img in input_images)
         
-        if in_jpg_path.exists():
+        if has_input:
             cleaned_metadata.append(entry)
         else:
             removed_count += 1
-            LOG.warning(f"Removing {sample_dir.name}: in.jpg not found")
+            LOG.warning(f"Removing {sample_dir.name}: no input images (1.jpg, 2.jpg, 3.jpg, or 4.jpg) found")
             
             if not dry_run:
                 # Remove the sample directory

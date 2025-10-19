@@ -36,6 +36,7 @@ ANIME_MAPPING = {
     "Scooped_Up_by_an_S_Rank_Adventurer": "https://www.anime-planet.com/anime/scooped-up-by-an-s-rank-adventurer/characters",
     "Secrets_of_the_Silent_Witch": "https://www.anime-planet.com/anime/secrets-of-the-silent-witch/characters",
     "See_You_Tomorrow_at_the_Food_Court": "https://www.anime-planet.com/anime/see-you-tomorrow-at-the-food-court/characters",
+    "Solo_Camping_for_Two": "https://www.anime-planet.com/anime/solo-camping-for-two/characters",
     "Summer_Pockets": "https://www.anime-planet.com/anime/summer-pockets/characters",
     "The_Apothecary_Diaries": "https://www.anime-planet.com/anime/the-apothecary-diaries/characters",
     "The_Brilliant_Healers_New_Life_in_the_Shadows": "https://www.anime-planet.com/anime/the-brilliant-healers-new-life-in-the-shadows/characters",
@@ -54,7 +55,7 @@ except ImportError:
 
 PROMPT = """Analyze this anime character image and provide a brief natural description.
 
-For human or humanoid characters, describe their gender and hair:
+For human/humanoid characters, describe their gender and hair:
 - Gender: man, woman, or person (if ambiguous)
 - Hair: color, include "long" if it reaches shoulders or beyond, or "bald"
 - Age: only mention if obviously elderly or a young child
