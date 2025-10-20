@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Script to transform dataset by stitching context frames vertically.
+Script to transform dataset by stitching context frames horizontally.
 Takes 2.jpg, 3.jpg, 4.jpg from each sample and stitches them into a single 2.jpg.
 Writes to a new directory to preserve the original.
 """
@@ -12,9 +12,9 @@ import shutil
 from pathlib import Path
 from typing import List
 
-def stitch_images_vertically(images: List[np.ndarray]) -> np.ndarray:
-    """Stitch images vertically."""
-    return np.vstack(images)
+def stitch_images_horizontally(images: List[np.ndarray]) -> np.ndarray:
+    """Stitch images horizontally."""
+    return np.hstack(images)
 
 def process_sample(source_dir: Path, dest_dir: Path) -> int:
     """
@@ -50,8 +50,8 @@ def process_sample(source_dir: Path, dest_dir: Path) -> int:
         shutil.copy2(source_dir / "2.jpg", dest_dir / "2.jpg")
         return 1
     
-    # Stitch vertically
-    stitched = stitch_images_vertically(context_frames)
+    # Stitch horizontally
+    stitched = stitch_images_horizontally(context_frames)
     
     # Save as 2.jpg in destination
     output_path = dest_dir / "2.jpg"
@@ -59,9 +59,9 @@ def process_sample(source_dir: Path, dest_dir: Path) -> int:
     
     return len(context_frames)
 
-def update_metadata(metadata_path: Path):
-    """Update metadata.json to reflect new structure."""
-    with open(metadata_path, 'r', encoding='utf-8') as f:
+def update_metadata(input_path: Path, output_path: Path):
+    """Update metadata.json to reflect new structure and save to output directory."""
+    with open(input_path, 'r', encoding='utf-8') as f:
         metadata = json.load(f)
     
     updated_count = 0
@@ -80,8 +80,8 @@ def update_metadata(metadata_path: Path):
             entry['edit_image'] = new_edit_images
             updated_count += 1
     
-    # Write back
-    with open(metadata_path, 'w', encoding='utf-8') as f:
+    # Write to output path
+    with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(metadata, f, indent=2, ensure_ascii=False)
     
     return updated_count
