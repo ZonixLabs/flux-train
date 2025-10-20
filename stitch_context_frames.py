@@ -12,9 +12,33 @@ import shutil
 from pathlib import Path
 from typing import List
 
-def stitch_images_horizontally(images: List[np.ndarray]) -> np.ndarray:
-    """Stitch images horizontally."""
-    return np.hstack(images)
+def stitch_images_horizontally(images: List[np.ndarray], border_width: int = 5, border_color: tuple = (255, 255, 255)) -> np.ndarray:
+    """Stitch images horizontally with borders between them."""
+    if not images:
+        return None
+    
+    if len(images) == 1:
+        return images[0]
+    
+    # Get max height to ensure all images align
+    max_height = max(img.shape[0] for img in images)
+    
+    # Pad images to same height and add borders
+    processed_images = []
+    for i, img in enumerate(images):
+        # Pad height if needed
+        if img.shape[0] < max_height:
+            padding = max_height - img.shape[0]
+            img = cv2.copyMakeBorder(img, 0, padding, 0, 0, cv2.BORDER_CONSTANT, value=border_color)
+        
+        processed_images.append(img)
+        
+        # Add border separator between images (except after last image)
+        if i < len(images) - 1:
+            separator = np.full((max_height, border_width, 3), border_color, dtype=np.uint8)
+            processed_images.append(separator)
+    
+    return np.hstack(processed_images)
 
 def process_sample(source_dir: Path, dest_dir: Path) -> int:
     """
